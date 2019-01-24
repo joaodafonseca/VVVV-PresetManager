@@ -1,0 +1,51 @@
+<Preset>
+  <Node>
+    <Name>asdas</Name>
+    <Type>Bang, 1, 0, 0, 1, 1, , 4</Type>
+    <Bin>1</Bin>
+    <Value>0</Value>
+    <ID>208</ID>
+  </Node>
+  <Node>
+    <Name>Vector 1</Name>
+    <Type>Endless, 3, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>3</Bin>
+    <Value>-0.02;-0.39;0.61</Value>
+    <ID>30</ID>
+  </Node>
+  <Node>
+    <Name>Color</Name>
+    <Type>HSVAField, r=  0% g=100% b=  0% a=100% , HasAlpha</Type>
+    <Bin>1</Bin>
+    <Value>0.88512,0.47258,0.00000,1.00000</Value>
+    <ID>182</ID>
+  </Node>
+  <Node>
+    <Name>Val 1</Name>
+    <Type>Endless, 1, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>-0.42</Value>
+    <ID>0</ID>
+  </Node>
+  <Node>
+    <Name>Bang 1</Name>
+    <Type>Toggle, 1, 0, 0, 1, 1, , 4</Type>
+    <Bin>1</Bin>
+    <Value>1</Value>
+    <ID>61</ID>
+  </Node>
+  <Node>
+    <Name>Val 2</Name>
+    <Type>Endless, 1, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>-0.17</Value>
+    <ID>1</ID>
+  </Node>
+  <Node>
+    <Name>4d vec</Name>
+    <Type>Endless, 4, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>4</Bin>
+    <Value>0.31;0.78;0.52;0.82</Value>
+    <ID>271</ID>
+  </Node>
+</Preset>
