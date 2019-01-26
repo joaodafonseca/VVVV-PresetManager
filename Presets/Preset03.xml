@@ -1,0 +1,30 @@
+<Preset>
+  <Node>
+    <Name>Width</Name>
+    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>4.66</Value>
+    <ID>363</ID>
+  </Node>
+  <Node>
+    <Name>Diffuse Color</Name>
+    <Type>HSVAField, r= 85% g= 85% b= 85% a=100% , HasAlpha</Type>
+    <Bin>1</Bin>
+    <Value>0.00000,0.18001,1.00000,1.00000</Value>
+    <ID>352</ID>
+  </Node>
+  <Node>
+    <Name>Scale XYZ</Name>
+    <Type>Endless, 3, 1, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>3</Bin>
+    <Value>0.04;0.04;0.04</Value>
+    <ID>350</ID>
+  </Node>
+  <Node>
+    <Name>Rotate XYZ</Name>
+    <Type>Endless, 3, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>3</Bin>
+    <Value>-0.52;-0.88;-0.11</Value>
+    <ID>351</ID>
+  </Node>
+</Preset>
