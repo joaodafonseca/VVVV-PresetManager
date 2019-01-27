@@ -7,6 +7,13 @@
     <ID>363</ID>
   </Node>
   <Node>
+    <Name>10 Vec</Name>
+    <Type>Endless, 1, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>10</Bin>
+    <Value>-0.01;-0.01;0.05;-0.01;0.06;-0.01;-0.01;0.08;-0.01;-0.01</Value>
+    <ID>391</ID>
+  </Node>
+  <Node>
     <Name>Diffuse Color</Name>
     <Type>HSVAField, r= 85% g= 85% b= 85% a=100% , HasAlpha</Type>
     <Bin>1</Bin>
@@ -24,7 +31,7 @@
     <Name>Rotate XYZ</Name>
     <Type>Endless, 3, 0, -99999999, 99999999, 0.01, , 4</Type>
     <Bin>3</Bin>
-    <Value>-0.2;-0.56;-0.11</Value>
+    <Value>-0.2;-0.53;-0.11</Value>
     <ID>351</ID>
   </Node>
 </Preset>

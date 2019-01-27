@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5230" top="3720" width="47550" height="32575">
    </BOUNDS>
-   <BOUNDS type="Window" left="-880" top="1520" width="39150" height="25460">
+   <BOUNDS type="Window" left="2410" top="2820" width="22650" height="18780">
    </BOUNDS>
    <PIN pinname="Write" visible="1">
    </PIN>
@@ -85,7 +85,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6190" top="7650" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="28030" top="16730" width="10210" height="5150">
+   <BOUNDS type="Window" left="22770" top="10320" width="10210" height="5150">
    </BOUNDS>
    <PIN pinname="Clear" slicecount="1" visible="1" values="0">
    </PIN>
@@ -183,7 +183,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="600" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.0402,0.0402,0.0402">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.04,0.04,0.04">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -209,7 +209,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1710" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.2,-0.5599,-0.11">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.2,-0.53,-0.11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -231,7 +231,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2900" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" pintype="Input" values="|0.99980,0.00000,0.46220,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" pintype="Input" values="|1.00000,0.00000,0.46230,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="|Diffuse Color|">
    </PIN>
@@ -393,7 +393,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5460" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.9996">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -688,4 +688,18 @@
    </LINK>
    <LINK srcnodeid="370" srcpinname="Output" dstnodeid="389" dstpinname="Input String">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="391" exposed="1">
+   <BOUNDS type="Node" left="5580" top="1870" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5580" top="1870" width="780" height="2810">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="10" values="-0.01,-0.01,0.05,-0.01,0.06,-0.01,-0.01,0.08,-0.01,-0.01">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|10 Vec|">
+   </PIN>
+   </NODE>
    </PATCH>
