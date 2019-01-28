@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="600" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.0464,0.0464,0.0464">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.04,0.04,0.04">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -171,7 +171,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1710" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.2257,-0.5559,-0.1092">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.2,-0.53,-0.11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -193,7 +193,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2900" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" pintype="Input" values="|0.90800,0.01530,0.50470,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" pintype="Input" values="|1.00000,0.00000,0.46230,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="|Diffuse Color|">
    </PIN>
@@ -355,7 +355,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5460" top="370" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.2115">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -643,7 +643,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="-0.0091,0.0028,0.045,-0.0065,0.0545,-0.0098,-0.0091,0.0718,0.007,-0.0091">
+   <PIN pinname="Y Input Value" slicecount="10" values="-0.01,-0.01,0.05,-0.01,0.06,-0.01,-0.01,0.08,-0.01,-0.01">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|10 Vec|">
    </PIN>
@@ -659,7 +659,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Color Spread|">
    </PIN>
-   <PIN pinname="Color Input" slicecount="5" values="|0.90920,0.69160,0.00000,0.50470|,|0.00000,0.66130,0.91530,0.50470|,|0.90800,0.82810,0.06660,0.50470|,|0.00000,0.07470,0.91720,0.50470|,|0.08530,0.43150,0.91070,0.50470|">
+   <PIN pinname="Color Input" slicecount="5" values="|1.00000,0.68120,0.00000,0.46230|,|0.00000,0.66540,1.00000,0.46230|,|1.00000,0.83060,0.00000,0.46230|,|0.00000,0.01160,1.00000,0.46230|,|0.00000,0.43410,1.00000,0.46230|">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="397" exposed="1">
@@ -673,7 +673,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Color Input" slicecount="10" values="|0.04840,0.94740,0.00000,0.50600|,|0.00940,0.91130,0.02320,0.50600|,|0.04600,0.91510,0.07300,0.50600|,|0.00000,0.97080,0.03750,0.50600|,|0.05070,0.46910,0.07200,0.50600|,|0.00000,0.98530,0.02240,0.50600|,|0.00300,0.91130,0.05220,0.50600|,|0.00010,0.94050,0.06590,0.50600|,|0.06450,0.91130,0.06680,0.50600|,|0.06370,0.91130,0.00180,0.50600|">
+   <PIN pinname="Color Input" slicecount="10" values="|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.05590,0.42390,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|,|0.00000,1.00000,0.00000,0.46230|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="398">
