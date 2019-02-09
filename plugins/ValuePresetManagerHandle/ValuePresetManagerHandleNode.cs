@@ -44,6 +44,9 @@ namespace VVVV.Nodes
 		
 		[Input("Load")]
 		public ISpread<bool> load;
+		
+		[Input("Init")]
+		public ISpread<bool> init;
 	
 		[Input("Preset")]
 		public ISpread<String> preset;
@@ -63,6 +66,9 @@ namespace VVVV.Nodes
 		[Output("NodeValue")]
 		public ISpread<String> nodeValue;
 		
+		[Output("UpdatePreset")]
+		public ISpread<bool> presetUpdateBang;
+		
 		[Import()]
 		public ILogger FLogger;
 		#endregion fields & pins
@@ -70,9 +76,12 @@ namespace VVVV.Nodes
 	
 		List<Variable> var = new List<Variable>(); 
 		
+		bool updatePresetBin;
 		
-		public void loadPreset(){
-		
+		public void loadPreset(bool _init){
+			
+			updatePresetBin = false;
+			
 			for(int i = 0; i < var.Count; i++){
 				
 				for(int p = 0; p < preset.Count; p++){
@@ -85,10 +94,17 @@ namespace VVVV.Nodes
 					
 						
 						String[] pv = pre[3].Split(';');
-					
-				FLogger.Log(LogType.Debug, pv.Length.ToString());
-						var[i].updateValue( pv);
+						var[i].updateValue( pv, _init);
+						
+						
+						if(pv.Length != var[i].binSize){
+							
+							updatePresetBin=true;
+						}
+
+				
 					}
+
 				}
 				
 			
@@ -128,7 +144,11 @@ namespace VVVV.Nodes
 			String[] SplitString = type.Split(',');
 			
 			type = SplitString[0];
-					
+			if(SplitString[0]=="Endless"){
+				String t = "int";
+				if(SplitString[5].Contains("."))t="float";
+				type+=":"+t;
+			}
 			
 			
 			return type;
@@ -137,9 +157,12 @@ namespace VVVV.Nodes
 		
 		
 		public void KeepTrackOfExposedNodes(){
-		
+		//var.Clear();
 			//	FLogger.Log(LogType.Debug,"hello");
-			if(var.Count==0  || load[0]){
+			
+			if(load[0])loadPreset(false);
+			
+			if(var.Count==0  || init[0]){
 			
 			var.Clear();
 			
@@ -149,7 +172,7 @@ namespace VVVV.Nodes
 					var.Add(new Variable(name[i],ID[i],RetrieveType(nodeSubType[i]), binSize));	
 				}	
 				
-					if(preset.Count>=1)loadPreset();
+					if(preset.Count>=1)loadPreset(true);
 			
 			}
 			
@@ -216,15 +239,20 @@ namespace VVVV.Nodes
 		//called when data for any output pin is requested
 		public void Evaluate(int SpreadMax)
 		{
+			updatePresetBin = false;
 			KeepTrackOfExposedNodes();
 			updateVariable();
-			
+			//var.Clear();
 			nodeName.SliceCount = var.Count;
 			nodeBinSize.SliceCount = var.Count;
 			nodeValue.SliceCount = var.Count;
 			nodeID.SliceCount = var.Count;
 			nodeType.SliceCount = var.Count;
+			
+			presetUpdateBang.SliceCount = 1;
 
+			presetUpdateBang[0] = updatePresetBin;
+			
 			for (int i = 0; i < var.Count; i++){
 				nodeName[i] = var[i].name;
 				nodeID[i] = var[i].ID;
@@ -279,13 +307,35 @@ namespace VVVV.Nodes
 			
 		//	value = new string[binSize];
 			value.Clear();
+			
 			for(int i = 0; i < binSize; i++){
-				value.Add("0");
+				value.Add("-1");
 			}
 				
 		}
 		
-	
+	public void updateValueAndBinSize(String[] _value){
+		
+		if(_value.Length > binSize){
+			
+			for(int i = 0; i < value.Count; i++){
+			//	value.RemoveAt(i);
+			}
+		
+		}else{
+			/*
+			updateValue(_value);
+				int addAmount = Math.Abs(_value.Length - binSize);
+			
+			
+			for(int i = 0; i < addAmount; i++){
+				value.Add( "Update Node");
+			}
+				binSize = value.Count;
+*/
+		}
+			
+	}
 		
 		public void updateValue(ISpread<String> _value){
 			value.Clear();
@@ -316,12 +366,14 @@ namespace VVVV.Nodes
 		}
 		
 			
-		public void updateValue(String[] _value){
-			binSize = _value.Length;
+		public void updateValue(String[] _value, bool _Init){
+			if(_Init)binSize = _value.Length;
 			value.Clear();
 			for(int i = 0; i < binSize; i++){
-				value.Add( _value[i]);
+				if(i<_value.Length)value.Add( _value[i]);
+				else value.Add("0");
 			}
+			binSize = value.Count;
 		}
 		
 	    public void Evaluate(int SpreadMax)
