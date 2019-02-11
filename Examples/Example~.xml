@@ -29,7 +29,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3830" top="600" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00100,0.00040,0.00060,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Background Color|">
    </PIN>
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="370" top="1420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.0006,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.0005,-0.0005,-0.0005">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -203,11 +203,11 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="4">
    </PIN>
-   <PIN pinname="Phase" slicecount="1" values="0.56">
+   <PIN pinname="Phase" slicecount="1" values="0.67">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0.5">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="1.8">
+   <PIN pinname="Width" slicecount="1" values="2.11">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
@@ -503,9 +503,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="50">
-   <BOUNDS type="Box" left="12820" top="8490" width="1510" height="240">
+   <BOUNDS type="Box" left="12820" top="8600" width="1510" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12820" top="8490" width="0" height="0">
+   <BOUNDS type="Node" left="12820" top="8600" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\Preset02.xml">
    </PIN>
@@ -589,7 +589,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1002">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -613,7 +613,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1820" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0005">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -629,7 +629,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="370" top="660" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.97">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.9695">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -715,7 +715,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.0074">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0026">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
@@ -869,7 +869,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00020,0.69910,1.00000,1.00000|,|0.00100,0.09990,1.00000,1.00000|,|0.50060,0.00000,0.99950,1.00000|,|1.00000,0.00000,0.89890,1.00000|,|1.00000,0.00070,0.29960,1.00000|,|0.99980,0.30090,0.00000,1.00000|,|0.99900,0.90010,0.00000,1.00000|,|0.49940,1.00000,0.00050,1.00000|,|0.00000,1.00000,0.10110,1.00000|,|0.00000,0.99930,0.70040,1.00000|">
+   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00010,0.70020,0.99950,1.00000|,|0.00000,0.10050,0.99970,1.00000|,|0.49970,0.00050,1.00000,1.00000|,|0.99950,0.00020,0.90010,1.00000|,|0.99960,0.00000,0.30040,1.00000|,|0.99990,0.29980,0.00050,1.00000|,|1.00000,0.89950,0.00030,1.00000|,|0.50030,0.99950,0.00000,1.00000|,|0.00050,0.99980,0.09990,1.00000|,|0.00040,1.00000,0.69960,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="86">
