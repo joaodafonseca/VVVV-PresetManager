@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="20370" scrolly="0">
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="31720" scrolly="0">
    <NODE systemname="UDP (Network Client)" nodename="UDP (Network Client)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="42130" top="44610" width="100" height="100">
    </BOUNDS>
@@ -1755,7 +1755,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Presets\Default\Default.xml">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1771,11 +1771,11 @@
    <LINK srcnodeid="148" srcpinname="Output" dstnodeid="7" dstpinname="Filename">
    </LINK>
    <NODE id="217" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="18180" top="33670" width="800" height="240">
+   <BOUNDS type="Box" left="44690" top="870" width="2170" height="340">
    </BOUNDS>
-   <BOUNDS type="Node" left="18180" top="33670" width="0" height="0">
+   <BOUNDS type="Node" left="44690" top="870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="Presets\Default\Default.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="Default\Default.xml">
    </PIN>
    <PIN pinname="Output String" visible="1" pintype="Output">
    </PIN>
@@ -1789,7 +1789,7 @@
    </PIN>
    <BOUNDS type="Window" left="0" top="0" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="|Default Preset Path (always needed) |">
    </PIN>
    <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -1836,15 +1836,13 @@
    <PIN pinname="Create Directory" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="222" dstpinname="Filename">
+   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="222" dstpinname="Filename" linkstyle="VHV">
+   <LINKPOINT x="41156" y="17767">
+   </LINKPOINT>
+   <LINKPOINT x="21734" y="18613">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="10" srcpinname="String" dstnodeid="222" dstpinname="Content">
-   </LINK>
-   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="218" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="18210" y="33080">
-   </LINKPOINT>
-   <LINKPOINT x="29980" y="33080">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="223">
    <BOUNDS type="Node" left="30210" top="5940" width="100" height="100">
@@ -2567,5 +2565,11 @@
    <LINK srcnodeid="288" srcpinname="Output 1" dstnodeid="286" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="37" srcpinname="UpdatePreset" dstnodeid="283" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="218" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="41156" y="3397">
+   </LINKPOINT>
+   <LINKPOINT x="33544" y="4243">
+   </LINKPOINT>
    </LINK>
    </PATCH>

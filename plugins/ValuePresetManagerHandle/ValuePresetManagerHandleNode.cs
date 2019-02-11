@@ -116,7 +116,7 @@ namespace VVVV.Nodes
 
 		public int RetrieveBinSize(String subType){
 			
-			int binSize = 0;
+			int binSize = 1;
 			String type = subType; 
 			String[] SplitString = type.Split(',');
 					
@@ -178,7 +178,7 @@ namespace VVVV.Nodes
 			
 			
 			if(ID.Count > var.Count){
-		FLogger.Log(LogType.Debug,"ADDING NODE");
+			//FLogger.Log(LogType.Debug,"ADDING NODE");
 			int newNodePos=-1;
 			for(int n = ID.Count; n > 0; n--){//	for(int n = 0; n < ID.Count; n++){
 				
@@ -194,7 +194,7 @@ namespace VVVV.Nodes
 				if(!nodeFound)newNodePos=n;
 				
 				}if(newNodePos>=0){
-						FLogger.Log(LogType.Debug,"name: " + name[newNodePos] + " | id: "+ID[newNodePos] + " | var size: "+var.Count.ToString() + " | at pos: "+newNodePos.ToString());
+						//FLogger.Log(LogType.Debug,"name: " + name[newNodePos] + " | id: "+ID[newNodePos] + " | var size: "+var.Count.ToString() + " | at pos: "+newNodePos.ToString());
 					if(newNodePos>var.Count){
 						var.Add(new Variable(name[newNodePos],ID[newNodePos], RetrieveType(nodeSubType[newNodePos]), RetrieveBinSize(nodeSubType[newNodePos])));
 					}
@@ -203,14 +203,14 @@ namespace VVVV.Nodes
 					
 						var.Insert(newNodePos,new Variable(name[newNodePos],ID[newNodePos], RetrieveType(nodeSubType[newNodePos]), RetrieveBinSize(nodeSubType[newNodePos])));
 				
-						FLogger.Log(LogType.Debug,"ADDED");
+						//FLogger.Log(LogType.Debug,"ADDED");
 				}
 				}
 				
 			}
 			
 			if(ID.Count < var.Count){
-				FLogger.Log(LogType.Debug,"REMOVING NODE");
+				//FLogger.Log(LogType.Debug,"REMOVING NODE");
 					for(int v = 0; v < var.Count; v++){
 					
 						bool nodeFound = false;
@@ -232,7 +232,7 @@ namespace VVVV.Nodes
 		public void updateVariable(){
 			if(receiveNewValue[0]){
 				var[variablePosition[0]].updateValue(value);
-				FLogger.Log(LogType.Debug, value[0]);
+				//FLogger.Log(LogType.Debug, value[0]);
 			}
 		}
 
