@@ -894,4 +894,46 @@
    </LINK>
    <LINK srcnodeid="85" srcpinname="Output" dstnodeid="46" dstpinname="Default Preset Path (always needed) ">
    </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="87">
+   <BOUNDS type="Node" left="12060" top="13080" width="3510" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12060" top="13080" width="1950" height="520">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|you might need to select the preset folder here &gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="88">
+   <BOUNDS type="Node" left="11290" top="13350" width="3510" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11290" top="13350" width="1950" height="520">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|you might need to select the preset folder here &gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="89">
+   <BOUNDS type="Node" left="5380" top="6560" width="3550" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5380" top="6560" width="2030" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|You might need to select the preset folder here -&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
