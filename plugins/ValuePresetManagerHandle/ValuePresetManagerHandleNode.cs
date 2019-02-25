@@ -309,7 +309,7 @@ namespace VVVV.Nodes
 			value.Clear();
 			
 			for(int i = 0; i < binSize; i++){
-				value.Add("-1");
+				value.Add("Update Value");
 			}
 				
 		}

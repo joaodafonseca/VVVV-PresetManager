@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Examples\Example.v4p" scrollx="0" scrolly="0" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
-   <BOUNDS type="Window" left="740" top="2870" width="19180" height="12980">
+   <BOUNDS type="Window" left="0" top="120" width="19180" height="12980">
    </BOUNDS>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="1360" top="6850" width="100" height="100">
@@ -29,7 +29,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3830" top="600" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00050,0.00020,0.00030,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.33610,0.29090,0.42750,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Background Color|">
    </PIN>
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="370" top="1420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.0003,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="7.9963,0.0002,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -595,7 +595,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2299">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -619,7 +619,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1820" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.4998">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -635,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="370" top="660" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.97">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.7996">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -683,7 +683,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="880" top="10050" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="19850" top="7140" width="9000" height="8680">
+   <BOUNDS type="Window" left="130" top="12690" width="9000" height="8680">
    </BOUNDS>
    <PIN pinname="Background Color" visible="1">
    </PIN>
@@ -721,7 +721,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.0036">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.0023">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
@@ -784,12 +784,12 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="0">
+   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="InAWindow" id="46" stayontop="0">
    <BOUNDS type="Node" left="8990" top="9177" width="6100" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5950" top="5220" width="47550" height="32575">
    </BOUNDS>
-   <BOUNDS type="Window" left="20830" top="730" width="22650" height="18780">
+   <BOUNDS type="Window" left="19060" top="140" width="22650" height="18780">
    </BOUNDS>
    <PIN pinname="Write" visible="1">
    </PIN>
@@ -814,6 +814,14 @@
    <PIN pinname="Auto Update Preset BinSize" visible="1">
    </PIN>
    <PIN pinname="DefaultPreset Path " visible="1">
+   </PIN>
+   <PIN pinname="Listening UDP Port - Remote Port" slicecount="1" values="5656">
+   </PIN>
+   <PIN pinname="Feedback Target UDP Port - Local Port" slicecount="1" values="5555">
+   </PIN>
+   <PIN pinname="Feedback Target IP - Remote Host" slicecount="1" values="localhost">
+   </PIN>
+   <PIN pinname="Force Read Default Preset" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Save" linkstyle="VHV">
@@ -875,7 +883,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00010,0.69960,1.00000,1.00000|,|0.00050,0.09990,1.00000,1.00000|,|0.50030,0.00000,0.99980,1.00000|,|1.00000,0.00000,0.89950,1.00000|,|1.00000,0.00040,0.29980,1.00000|,|0.99990,0.30040,0.00000,1.00000|,|0.99950,0.90010,0.00000,1.00000|,|0.49970,1.00000,0.00020,1.00000|,|0.00000,1.00000,0.10050,1.00000|,|0.00000,0.99960,0.70020,1.00000|">
+   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.99960,0.00000,0.00050,1.00000|,|0.99990,0.59970,0.00050,1.00000|,|0.80010,0.99950,0.00030,1.00000|,|0.20040,0.99950,0.00000,1.00000|,|0.00050,0.99980,0.39980,1.00000|,|0.00040,1.00000,0.99950,1.00000|,|0.00010,0.40030,0.99950,1.00000|,|0.19990,0.00050,0.99970,1.00000|,|0.79960,0.00050,1.00000,1.00000|,|0.99950,0.00020,0.60020,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="86">
