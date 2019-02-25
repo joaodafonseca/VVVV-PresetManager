@@ -29,7 +29,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3830" top="600" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.33610,0.29090,0.42750,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Background Color|">
    </PIN>
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="370" top="1420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="7.9963,0.0002,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -595,7 +595,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2299">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -619,7 +619,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1820" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.4998">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -635,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="370" top="660" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.7996">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.97">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -683,7 +683,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="880" top="10050" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="130" top="12690" width="9000" height="8680">
+   <BOUNDS type="Window" left="19090" top="120" width="9000" height="8680">
    </BOUNDS>
    <PIN pinname="Background Color" visible="1">
    </PIN>
@@ -721,7 +721,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.0023">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
@@ -784,7 +784,7 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="InAWindow" id="46" stayontop="0">
+   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="0">
    <BOUNDS type="Node" left="8990" top="9177" width="6100" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5950" top="5220" width="47550" height="32575">
@@ -883,7 +883,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.99960,0.00000,0.00050,1.00000|,|0.99990,0.59970,0.00050,1.00000|,|0.80010,0.99950,0.00030,1.00000|,|0.20040,0.99950,0.00000,1.00000|,|0.00050,0.99980,0.39980,1.00000|,|0.00040,1.00000,0.99950,1.00000|,|0.00010,0.40030,0.99950,1.00000|,|0.19990,0.00050,0.99970,1.00000|,|0.79960,0.00050,1.00000,1.00000|,|0.99950,0.00020,0.60020,1.00000|">
+   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00000,0.70000,1.00000,1.00000|,|0.00000,0.10000,1.00000,1.00000|,|0.50000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.90000,1.00000|,|1.00000,0.00000,0.30000,1.00000|,|1.00000,0.30000,0.00000,1.00000|,|1.00000,0.90000,0.00000,1.00000|,|0.50000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.10000,1.00000|,|0.00000,1.00000,0.70000,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="86">
