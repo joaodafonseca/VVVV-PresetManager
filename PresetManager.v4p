@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\Spline_Tool\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="23110" scrolly="-360">
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="11040" scrolly="3180">
    <NODE systemname="UDP (Network Client)" nodename="UDP (Network Client)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="42130" top="44610" width="100" height="100">
    </BOUNDS>
@@ -17,7 +17,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="30350" top="680" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="44444">
+   <PIN pinname="Y Input Value" slicecount="1" values="5656">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -279,7 +279,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="27340" top="680" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="55555">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5555">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -470,6 +470,8 @@
    <PIN pinname="Init" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="UpdatePreset" visible="1">
+   </PIN>
+   <PIN pinname="AllNodesAreUpdated" visible="1">
    </PIN>
    </NODE>
    <NODE id="38" systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
@@ -992,7 +994,7 @@
    <LINKPOINT x="42864" y="24144">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="435" top="900" width="22650" height="16050">
+   <BOUNDS type="Window" left="19060" top="140" width="22650" height="18780">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -2605,5 +2607,23 @@
    </LINKPOINT>
    <LINKPOINT x="48420" y="26860">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="298">
+   <BOUNDS type="Box" left="27570" top="21180" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="27570" top="21180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AllNodesAreUpdated">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="AllNodesAreUpdated" dstnodeid="298" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

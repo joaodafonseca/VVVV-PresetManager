@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
    <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Examples\Example.v4p" scrollx="0" scrolly="0" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
-   <BOUNDS type="Window" left="0" top="120" width="19180" height="12980">
+   <BOUNDS type="Window" left="0" top="120" width="19590" height="12980">
    </BOUNDS>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="1360" top="6850" width="100" height="100">
@@ -29,7 +29,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3830" top="600" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.15009,0.15009,0.15009,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Background Color|">
    </PIN>
@@ -493,9 +493,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
-   <BOUNDS type="Box" left="15220" top="9870" width="480" height="480">
+   <BOUNDS type="Box" left="15310" top="9950" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15220" top="9870" width="0" height="0">
+   <BOUNDS type="Node" left="15310" top="9950" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -721,7 +721,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2270" top="1190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="-0.02">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
@@ -784,7 +784,7 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="0">
+   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="InAWindow" id="46" stayontop="0">
    <BOUNDS type="Node" left="8990" top="9177" width="6100" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5950" top="5220" width="47550" height="32575">
@@ -819,9 +819,11 @@
    </PIN>
    <PIN pinname="Feedback Target UDP Port - Local Port" slicecount="1" values="5555">
    </PIN>
-   <PIN pinname="Feedback Target IP - Remote Host" slicecount="1" values="localhost">
+   <PIN pinname="Feedback Target IP - Remote Host" slicecount="1" values="127.0.0.1">
    </PIN>
    <PIN pinname="Force Read Default Preset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="AllNodesAreUpdated" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Save" linkstyle="VHV">
@@ -851,9 +853,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Preset Loaded" dstnodeid="51" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="15060" y="9630">
+   <LINKPOINT x="15103" y="9656">
    </LINKPOINT>
-   <LINKPOINT x="15250" y="9630">
+   <LINKPOINT x="15337" y="9684">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="46" dstpinname="Load Preset Path">
@@ -908,34 +910,6 @@
    </LINK>
    <LINK srcnodeid="85" srcpinname="Output" dstnodeid="46" dstpinname="Default Preset Path (always needed) ">
    </LINK>
-   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="87">
-   <BOUNDS type="Node" left="12060" top="13080" width="3510" height="230">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12060" top="13080" width="1950" height="520">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|you might need to select the preset folder here &gt;|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="88">
-   <BOUNDS type="Node" left="11290" top="13350" width="3510" height="230">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11290" top="13350" width="1950" height="520">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|you might need to select the preset folder here &gt;|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="89">
    <BOUNDS type="Node" left="5380" top="6560" width="3550" height="230">
    </BOUNDS>
@@ -966,4 +940,34 @@
    </LINK>
    <LINK srcnodeid="91" srcpinname="OnChange" dstnodeid="52" dstpinname="Input 3">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93">
+   <BOUNDS type="Box" left="15310" top="11430" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15310" top="11430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AllNodesAreUpdated">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="AllNodesAreUpdated" dstnodeid="93" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="12040" y="11150">
+   </LINKPOINT>
+   <LINKPOINT x="15340" y="11150">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="97">
+   <BOUNDS type="Node" left="12550" top="13400" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12550" top="13400" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13970" top="12320" width="6220" height="5060">
+   </BOUNDS>
+   </NODE>
    </PATCH>

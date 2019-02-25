@@ -69,6 +69,9 @@ namespace VVVV.Nodes
 		[Output("UpdatePreset")]
 		public ISpread<bool> presetUpdateBang;
 		
+		[Output("AllNodesAreUpdated")]
+		public ISpread<bool> nodesUpdated;
+		
 		[Import()]
 		public ILogger FLogger;
 		#endregion fields & pins
@@ -77,6 +80,7 @@ namespace VVVV.Nodes
 		List<Variable> var = new List<Variable>(); 
 		
 		bool updatePresetBin;
+	
 		
 		public void loadPreset(bool _init){
 			
@@ -250,8 +254,11 @@ namespace VVVV.Nodes
 			nodeType.SliceCount = var.Count;
 			
 			presetUpdateBang.SliceCount = 1;
+			nodesUpdated.SliceCount = 1;
 
 			presetUpdateBang[0] = updatePresetBin;
+			
+			nodesUpdated[0]  = true;
 			
 			for (int i = 0; i < var.Count; i++){
 				nodeName[i] = var[i].name;
@@ -273,10 +280,14 @@ namespace VVVV.Nodes
 				}
 				
 				nodeValue[i] = val;
+				if(val.Contains("Update Node")
+				
+				)nodesUpdated[0] = false;
 				//FLogger.Log(LogType.Debug, "");
 			}
 			//
-		}  
+		} 
+	
 	}
 	
 	
@@ -309,7 +320,7 @@ namespace VVVV.Nodes
 			value.Clear();
 			
 			for(int i = 0; i < binSize; i++){
-				value.Add("Update Value");
+				value.Add("Update Node");
 			}
 				
 		}
