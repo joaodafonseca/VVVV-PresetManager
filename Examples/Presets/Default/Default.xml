@@ -3,7 +3,7 @@
     <Name>Background Color</Name>
     <Type>HSVAField, r=  0% g=  0% b=  0% a=100% , HasAlpha</Type>
     <Bin>1</Bin>
-    <Value>0.00000,0.00000,0.00000,1.00000</Value>
+    <Value>0.81942,0.35926,0.45208,1.00000</Value>
     <ID>6</ID>
   </Node>
   <Node>
@@ -17,49 +17,49 @@
     <Name>Rotation</Name>
     <Type>Endless, 3, 0, -99999999, 99999999, 0.01, , 4</Type>
     <Bin>3</Bin>
-    <Value>0;0;0</Value>
+    <Value>0;0.5;0</Value>
     <ID>34</ID>
   </Node>
   <Node>
     <Name>Max Radius</Name>
     <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
     <Bin>1</Bin>
-    <Value>0.1</Value>
+    <Value>0.11</Value>
     <ID>65</ID>
   </Node>
   <Node>
     <Name>Radius Phase</Name>
     <Type>Rotary, 1, 0, 0, 1, 0.01, , 4</Type>
     <Bin>1</Bin>
-    <Value>0</Value>
+    <Value>0.04</Value>
     <ID>67</ID>
   </Node>
   <Node>
     <Name>Main Radius</Name>
     <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
     <Bin>1</Bin>
-    <Value>0.97</Value>
+    <Value>1</Value>
     <ID>68</ID>
   </Node>
   <Node>
     <Name>Radius Factor</Name>
     <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
     <Bin>1</Bin>
-    <Value>0</Value>
+    <Value>6</Value>
     <ID>76</ID>
   </Node>
   <Node>
     <Name>Color 10</Name>
     <Type>HSVAField, r=  0% g=100% b=  0% a=100% , HasAlpha</Type>
     <Bin>10</Bin>
-    <Value>0.00000,0.70000,1.00000,1.00000;0.00000,0.10000,1.00000,1.00000;0.50000,0.00000,1.00000,1.00000;1.00000,0.00000,0.90000,1.00000;1.00000,0.00000,0.30000,1.00000;1.00000,0.30000,0.00000,1.00000;1.00000,0.90000,0.00000,1.00000;0.50000,1.00000,0.00000,1.00000;0.00000,1.00000,0.10000,1.00000;0.00000,1.00000,0.70000,1.00000</Value>
+    <Value>0.20000,0.00000,1.00000,1.00000;0.80000,0.00000,1.00000,1.00000;1.00000,0.00000,0.60000,1.00000;1.00000,0.00000,0.00000,1.00000;1.00000,0.60000,0.00000,1.00000;0.80000,1.00000,0.00000,1.00000;0.20000,1.00000,0.00000,1.00000;0.00000,1.00000,0.40000,1.00000;0.00000,1.00000,1.00000,1.00000;0.00000,0.40000,1.00000,1.00000</Value>
     <ID>84</ID>
   </Node>
   <Node>
-    <Name>qweq</Name>
-    <Type>Endless, 2, 0, -99999999, 99999999, 0.01, , 4</Type>
-    <Bin>2</Bin>
-    <Value>Update Node;Update Node</Value>
-    <ID>94</ID>
+    <Name>4D Vector</Name>
+    <Type>Endless, 4, 0, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>4</Bin>
+    <Value>0;0.07;0;1</Value>
+    <ID>108</ID>
   </Node>
 </Preset>
