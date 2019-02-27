@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\Examples\Example.v4p" scrollx="0" scrolly="0" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
-   <BOUNDS type="Window" left="240" top="0" width="17775" height="12975">
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_01\Example.v4p" scrollx="555" scrolly="825" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
+   <BOUNDS type="Window" left="240" top="0" width="18195" height="12975">
    </BOUNDS>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="1360" top="6850" width="100" height="100">
@@ -784,7 +784,87 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="PresetManager" filename="..\PresetManager.v4p" nodename="..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="0">
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="84" exposed="1">
+   <BOUNDS type="Node" left="4830" top="1600" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4830" top="1600" width="2530" height="3160">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color 10|">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00000,0.70000,1.00000,1.00000|,|0.00000,0.10000,1.00000,1.00000|,|0.50000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.90000,1.00000|,|1.00000,0.00000,0.30000,1.00000|,|1.00000,0.30000,0.00000,1.00000|,|1.00000,0.90000,0.00000,1.00000|,|0.50000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.10000,1.00000|,|0.00000,1.00000,0.70000,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="86">
+   <BOUNDS type="Node" left="15040" top="8380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Folder" slicecount="1" values="CurrentPatch">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="15040" top="8760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="Presets\Default\Default.xml">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="85" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="89">
+   <BOUNDS type="Node" left="5380" top="6560" width="3550" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5380" top="6560" width="2030" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|You might need to select the preset folder here -&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="91">
+   <BOUNDS type="Node" left="9850" top="6360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="91" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="7940" y="6675">
+   </LINKPOINT>
+   <LINKPOINT x="9850" y="6675">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="OnChange" dstnodeid="52" dstpinname="Input 3">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93">
+   <BOUNDS type="Box" left="15310" top="11430" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15310" top="11430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AllNodesAreUpdated">
+   </PIN>
+   </NODE>
+   <NODE systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="0">
    <BOUNDS type="Node" left="8990" top="9177" width="6100" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5950" top="5220" width="47550" height="32575">
@@ -874,88 +954,8 @@
    <LINKPOINT x="14510" y="8970">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="84" exposed="1">
-   <BOUNDS type="Node" left="4830" top="1600" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4830" top="1600" width="2530" height="3160">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Color 10|">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00000,0.70000,1.00000,1.00000|,|0.00000,0.10000,1.00000,1.00000|,|0.50000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.90000,1.00000|,|1.00000,0.00000,0.30000,1.00000|,|1.00000,0.30000,0.00000,1.00000|,|1.00000,0.90000,0.00000,1.00000|,|0.50000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.10000,1.00000|,|0.00000,1.00000,0.70000,1.00000|">
-   </PIN>
-   </NODE>
-   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="86">
-   <BOUNDS type="Node" left="15040" top="8380" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Folder" slicecount="1" values="CurrentPatch">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="85">
-   <BOUNDS type="Node" left="15040" top="8760" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="Presets\Default\Default.xml">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="85" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="85" srcpinname="Output" dstnodeid="46" dstpinname="Default Preset Path (always needed) ">
    </LINK>
-   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="89">
-   <BOUNDS type="Node" left="5380" top="6560" width="3550" height="230">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5380" top="6560" width="2030" height="530">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|You might need to select the preset folder here -&gt;|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="9850" top="6360" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="OnChange" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="91" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="7940" y="6675">
-   </LINKPOINT>
-   <LINKPOINT x="9850" y="6675">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="OnChange" dstnodeid="52" dstpinname="Input 3">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93">
-   <BOUNDS type="Box" left="15310" top="11430" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="15310" top="11430" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="AllNodesAreUpdated">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="46" srcpinname="AllNodesAreUpdated" dstnodeid="93" dstpinname="Y Input Value" linkstyle="VHV">
    <LINKPOINT x="12040" y="11150">
    </LINKPOINT>
