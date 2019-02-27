@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_01\Example.v4p" scrollx="555" scrolly="825" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
-   <BOUNDS type="Window" left="240" top="0" width="18195" height="12975">
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_01\Example.v4p" scrollx="0" scrolly="0" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
+   <BOUNDS type="Window" left="0" top="150" width="18880" height="12710">
    </BOUNDS>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="1360" top="6850" width="100" height="100">
@@ -257,9 +257,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Box" left="9010" top="8270" width="480" height="480">
+   <BOUNDS type="Box" left="8990" top="8270" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9010" top="8270" width="0" height="0">
+   <BOUNDS type="Node" left="8990" top="8270" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -306,6 +306,8 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Morph Time|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="60">
@@ -363,7 +365,7 @@
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="57">
    <BOUNDS type="Node" left="8020" top="3980" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8020" top="3980" width="710" height="1730">
+   <BOUNDS type="Box" left="8020" top="3980" width="710" height="1650">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -439,9 +441,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="63" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="14083" y="8073">
+   <LINKPOINT x="14077" y="8073">
    </LINKPOINT>
-   <LINKPOINT x="9217" y="8147">
+   <LINKPOINT x="9203" y="8147">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53">
@@ -570,26 +572,6 @@
    <PIN pinname="Input String" visible="1" slicecount="55" values="|NODE NAME|,ID,TYPE,|BIN |,VALUE,,,,,,|Scale XYZ|,350,Endless:float,3,0.04;0.04;0.04,|Rotate XYZ|,351,Endless:float,3,-0.2;-0.53;-0.11,|Diffuse Color|,352,HSVAField,1,|1.00000,0.00000,0.46225,1.00000|,Width,363,Endless:float,1,2,|10 Vec|,391,Endless:float,10,-0.01;-0.01;0.05;-0.01;0.06;-0.01;-0.01;0.08;-0.01;-0.01,|Color Spread|,394,HSVAField,5,|0.00000,0.00000,0.00210,0.01220;0.00000,0.65780,1.00000,0.01220;0.00000,0.28470,1.00000,0.01220;0.00000,0.45330,1.00000,0.01220;0.05310,0.00000,0.37335,0.01220|,|color spread 2|,397,HSVAField,10,|0.00000,0.46090,0.00120,0.21960;0.00000,0.46090,0.00120,0.21960;0.00000,1.00000,0.32740,0.21960;0.00000,0.46090,0.00120,0.21960;0.00000,0.46090,0.00120,0.21960;0.00000,0.46090,0.00120,0.21960;0.00000,0.46090,0.00120,0.21960;0.01237,0.17745,0.00000,0.21960;0.00000,0.46090,0.00120,0.21960;0.00000,0.46090,0.00120,0.21960|,|Spread Count Z|,399,Endless:int,1,1,v3c8,405,Endless:float,3,0;-0.11;0">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
-   <BOUNDS type="Box" left="14700" top="5490" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14700" top="5490" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Auto Update Preset BinSize|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" exposed="1">
    <BOUNDS type="Box" left="2270" top="610" width="850" height="240">
    </BOUNDS>
@@ -659,7 +641,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="72">
-   <BOUNDS type="Box" left="8790" top="3960" width="1210" height="1740">
+   <BOUNDS type="Box" left="8790" top="3960" width="1580" height="1680">
    </BOUNDS>
    <BOUNDS type="Node" left="8790" top="3960" width="0" height="0">
    </BOUNDS>
@@ -683,7 +665,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="880" top="10050" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="17895" top="0" width="9000" height="8670">
+   <BOUNDS type="Window" left="18710" top="180" width="9000" height="8670">
    </BOUNDS>
    <PIN pinname="Background Color" visible="1">
    </PIN>
@@ -771,9 +753,9 @@
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="82">
    <BOUNDS type="Node" left="8030" top="350" width="610" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="8030" top="350" width="10790" height="3500">
+   <BOUNDS type="Box" left="8030" top="350" width="10690" height="1890">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|USAGE&cr;&lf;&cr;&lf;1 - Select and press  &quot;CTRL+K&quot; to expose an IOBox to the Preset Manager (Exposed IoBoxes will turn green)&cr;&lf;&cr;&lf;2 - Everytime an IOBox  is exposed it needs to be updated (value change), before saving the preset in order to update the IOBox value and Bin Size in the preset Manager&cr;&lf;&cr;&lf;3 - To Save a preset: Select the Path in &quot;Save As&quot; and hit  &quot;Save New&quot;&cr;&lf;&cr;&lf;4 - &quot;Save&quot; will save to the current preset.&cr;&lf;&cr;&lf;5 - A Preset Folder will be created inside of your root folder with a &quot;Default.xml&quot;, do not delete this file as it stores the Default Values and Bin Size of the Node you expose and load them everytime you start the patch.&cr;&lf;|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|USAGE&cr;&lf;&cr;&lf;1 - Select and press  &quot;CTRL+K&quot; to expose an IOBox to the Preset Manager (Exposed IoBoxes will turn green)&cr;&lf;&cr;&lf;2 - To Save a preset: Select the Path in &quot;Save As&quot; and hit  &quot;Save New&quot;&cr;&lf;&cr;&lf;3 - &quot;Save&quot; will save to the current preset.&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -798,26 +780,6 @@
    <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.00000,0.70000,1.00000,1.00000|,|0.00000,0.10000,1.00000,1.00000|,|0.50000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.90000,1.00000|,|1.00000,0.00000,0.30000,1.00000|,|1.00000,0.30000,0.00000,1.00000|,|1.00000,0.90000,0.00000,1.00000|,|0.50000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.10000,1.00000|,|0.00000,1.00000,0.70000,1.00000|">
    </PIN>
    </NODE>
-   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="86">
-   <BOUNDS type="Node" left="15040" top="8380" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Folder" slicecount="1" values="CurrentPatch">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="85">
-   <BOUNDS type="Node" left="15040" top="8760" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="Presets\Default\Default.xml">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="85" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="89">
    <BOUNDS type="Node" left="5380" top="6560" width="3550" height="230">
    </BOUNDS>
@@ -848,28 +810,12 @@
    </LINK>
    <LINK srcnodeid="91" srcpinname="OnChange" dstnodeid="52" dstpinname="Input 3">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93">
-   <BOUNDS type="Box" left="15310" top="11430" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="15310" top="11430" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="AllNodesAreUpdated">
-   </PIN>
-   </NODE>
    <NODE systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="0">
    <BOUNDS type="Node" left="8990" top="9177" width="6100" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5950" top="5220" width="47550" height="32575">
    </BOUNDS>
-   <BOUNDS type="Window" left="19060" top="140" width="22650" height="18780">
+   <BOUNDS type="Window" left="10050" top="1690" width="11590" height="6870">
    </BOUNDS>
    <PIN pinname="Write" visible="1">
    </PIN>
@@ -891,7 +837,7 @@
    </PIN>
    <PIN pinname="Exposed Nodes" visible="1">
    </PIN>
-   <PIN pinname="Auto Update Preset BinSize" visible="1">
+   <PIN pinname="Auto Update Preset BinSize" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="DefaultPreset Path " visible="1">
    </PIN>
@@ -903,7 +849,9 @@
    </PIN>
    <PIN pinname="Force Read Default Preset" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="AllNodesAreUpdated" visible="1">
+   <PIN pinname="AllNodesAreUpdated" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Morph Time" visible="1" slicecount="1" values="4">
    </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Save" linkstyle="VHV">
@@ -920,16 +868,10 @@
    <LINKPOINT x="14626" y="8997">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Morph Time" linkstyle="VHV">
-   <LINKPOINT x="10390" y="9110">
-   </LINKPOINT>
-   <LINKPOINT x="13850" y="9110">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Save New" linkstyle="VHV">
-   <LINKPOINT x="13870" y="9060">
+   <LINKPOINT x="13870" y="8880">
    </LINKPOINT>
-   <LINKPOINT x="10230" y="9060">
+   <LINKPOINT x="10360" y="8880">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Preset Loaded" dstnodeid="51" dstpinname="Y Input Value" linkstyle="VHV">
@@ -938,7 +880,11 @@
    <LINKPOINT x="15337" y="9684">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="46" dstpinname="Load Preset Path">
+   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="46" dstpinname="Load Preset Path" linkstyle="VHV">
+   <LINKPOINT x="12880" y="8950">
+   </LINKPOINT>
+   <LINKPOINT x="13690" y="8950">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Morph Presets" linkstyle="VHV">
    <LINKPOINT x="10607" y="9337">
@@ -948,18 +894,10 @@
    </LINK>
    <LINK srcnodeid="46" srcpinname="Exposed Nodes" dstnodeid="48" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Auto Update Preset BinSize" linkstyle="VHV">
-   <LINKPOINT x="14730" y="8970">
+   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Morph Time" linkstyle="VHV">
+   <LINKPOINT x="10390" y="7910">
    </LINKPOINT>
-   <LINKPOINT x="14510" y="8970">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="85" srcpinname="Output" dstnodeid="46" dstpinname="Default Preset Path (always needed) ">
-   </LINK>
-   <LINK srcnodeid="46" srcpinname="AllNodesAreUpdated" dstnodeid="93" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="12040" y="11150">
-   </LINKPOINT>
-   <LINKPOINT x="15340" y="11150">
+   <LINKPOINT x="14390" y="7910">
    </LINKPOINT>
    </LINK>
    </PATCH>

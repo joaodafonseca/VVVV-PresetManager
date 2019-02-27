@@ -6,6 +6,7 @@ using System.ComponentModel.Composition;
 
 using VVVV.PluginInterfaces.V1;
 using VVVV.PluginInterfaces.V2;
+using VVVV.PluginInterfaces.V2.Graph;
 using VVVV.Utils.VColor;
 using VVVV.Utils.VMath;
 using System.Text;
@@ -21,23 +22,14 @@ namespace VVVV.Nodes
 	{
 		#region fields & pins
 		
+		[Input("Exposed Pins")]
+		public ISpread<string> exposedPins;
+		
 		[Input("NodeSubType")]
 		public ISpread<String> nodeSubType;
 		
 		[Input("Name")]
 		public ISpread<String> name;
-		
-		[Input("ID")]
-		public ISpread<String> ID;
-		
-		[Input("Value")]
-		public ISpread<String> value;
-		
-		[Input("Bin Size")]
-		public ISpread<String> binSize;
-		
-		[Input("VariablePosition")]
-		public ISpread<int> variablePosition;
 		
 		[Input("ReceiveNewValue")]
 		public ISpread<bool> receiveNewValue;
@@ -45,9 +37,6 @@ namespace VVVV.Nodes
 		[Input("Load")]
 		public ISpread<bool> load;
 		
-		[Input("Init")]
-		public ISpread<bool> init;
-	
 		[Input("Preset")]
 		public ISpread<String> preset;
 		
@@ -59,326 +48,201 @@ namespace VVVV.Nodes
 		
 		[Output("NodeType")]
 		public ISpread<String> nodeType;
-
+		
 		[Output("NodeBinSize")]
 		public ISpread<String> nodeBinSize;
 		
 		[Output("NodeValue")]
 		public ISpread<String> nodeValue;
 		
-		[Output("UpdatePreset")]
-		public ISpread<bool> presetUpdateBang;
-		
-		[Output("AllNodesAreUpdated")]
-		public ISpread<bool> nodesUpdated;
 		
 		[Import()]
 		public ILogger FLogger;
+		
+		[Import()]
+		IHDEHost FHDEHost;
 		#endregion fields & pins
 		
-	
-		List<Variable> var = new List<Variable>(); 
 		
-		bool updatePresetBin;
-	
+		List<Variable> var = new List<Variable>();
 		
-		public void loadPreset(bool _init){
+		
+		public void getExposedPinSettings(){
+			var.Clear();
+			FLogger.Log(LogType.Debug,"ADDING EXPOSED PINS");
 			
-			updatePresetBin = false;
+			for (int i = 0; i < exposedPins.Count; i++) {
+				var nodePath = exposedPins[i].Substring(0, exposedPins[i].LastIndexOf('/'));
+				var node = FHDEHost.GetNodeFromPath(nodePath);
+				
+				
+				
+				//	if (exposedPins[i]) {
+					if (node != null) {
+						
+						var parts = exposedPins[i].Split('/');
+						var pin = node.FindPin(parts[parts.Length - 1]);
+						
+						//FValues[i] = pin.Spread;
+						string nodeID = parts[parts.Length - 2];
+						
+						FLogger.Log(LogType.Debug,parts[parts.Length - 2]);
+						//string nodeType
+						
+						if(pin.Spread.Contains("|")){
+							string trimValue = pin.Spread.Substring(1, pin.Spread.Length - 2);
+							
+							//		trimValue.Remove(',');
+							
+							string[] nodeValues = trimValue.Split('|');
+							
+						 	
+							List<String> colorValues = new List<String>();
+							
+							for(int v = 0; v < nodeValues.Length; v++){
+								
+								if(nodeValues[v]!=",")colorValues.Add(nodeValues[v]);
+							}
+							
+							var.Add(new Variable(name[i],nodeID, RetrieveType(nodeSubType[i]), colorValues));
+						}else{
+							string[] nodeValues = pin.Spread.Split(',');
+							var.Add(new Variable(name[i],nodeID, RetrieveType(nodeSubType[i]), nodeValues));
+						}
+						
+						
+					}
+				//}
+			}
+			
+		}
+		
+		
+		public void loadPreset(){
+			
+			
+			FLogger.Log(LogType.Debug,"Loading Preset");
 			
 			for(int i = 0; i < var.Count; i++){
 				
 				for(int p = 0; p < preset.Count; p++){
-				
+					
 					String[] pre = preset[p].Split(':');
 					String nodeID = pre[4];
-					//	FLogger.Log(LogType.Debug, preset[p]);
+
 					if(nodeID == var[i].ID){
-						
-					
-						
+
 						String[] pv = pre[3].Split(';');
-						var[i].updateValue( pv, _init);
-						
-						
-						if(pv.Length != var[i].binSize){
-							
-							updatePresetBin=true;
-						}
-
-				
+						var[i].updateValue( pv);	
 					}
-
 				}
-				
-			
-				
 			}
-			
 		}
-			
-
-		public int RetrieveBinSize(String subType){
-			
-			int binSize = 1;
-			String type = subType; 
-			String[] SplitString = type.Split(',');
-					
-			if(SplitString[0]=="Toggle" || SplitString[0]=="Bang")binSize = 1;
-			
-			if(SplitString[0]=="Endless"){
-					
-				binSize =  Int32.Parse(SplitString[1]);
-			}
-				
-			if(SplitString[0]=="HSVAField"){
-				
-				binSize = 1;
-			}
-			
-			return binSize;
-			
-		}
-		
 		
 		public String RetrieveType(String subType){
 			
-			 
-			String type = subType; 
+			String type = subType;
 			String[] SplitString = type.Split(',');
-			
 			type = SplitString[0];
+			
 			if(SplitString[0]=="Endless"){
+				
 				String t = "int";
 				if(SplitString[5].Contains("."))t="float";
 				type+=":"+t;
 			}
 			
-			
 			return type;
-			
 		}
 		
 		
-		public void KeepTrackOfExposedNodes(){
-		//var.Clear();
-			//	FLogger.Log(LogType.Debug,"hello");
-			
-			if(load[0])loadPreset(false);
-			
-			if(var.Count==0  || init[0]){
-			
-			var.Clear();
-			
-				for(int i = 0; i < nodeSubType.Count; i++){
-				
-					int binSize = RetrieveBinSize(nodeSubType[i]);	
-					var.Add(new Variable(name[i],ID[i],RetrieveType(nodeSubType[i]), binSize));	
-				}	
-				
-					if(preset.Count>=1)loadPreset(true);
-			
-			}
-			
-			
-			if(ID.Count > var.Count){
-			//FLogger.Log(LogType.Debug,"ADDING NODE");
-			int newNodePos=-1;
-			for(int n = ID.Count; n > 0; n--){//	for(int n = 0; n < ID.Count; n++){
-				
-					bool nodeFound = false;
-				
-					for(int v = 0; v < var.Count; v++){
-						
-						if( ID[n] == var[v].ID)nodeFound=true;
-						
-					}
-				
-				
-				if(!nodeFound)newNodePos=n;
-				
-				}if(newNodePos>=0){
-						//FLogger.Log(LogType.Debug,"name: " + name[newNodePos] + " | id: "+ID[newNodePos] + " | var size: "+var.Count.ToString() + " | at pos: "+newNodePos.ToString());
-					if(newNodePos>var.Count){
-						var.Add(new Variable(name[newNodePos],ID[newNodePos], RetrieveType(nodeSubType[newNodePos]), RetrieveBinSize(nodeSubType[newNodePos])));
-					}
-					else{
-						//if(newNodePos== ID.Count-1)newNodePos-=1;
-					
-						var.Insert(newNodePos,new Variable(name[newNodePos],ID[newNodePos], RetrieveType(nodeSubType[newNodePos]), RetrieveBinSize(nodeSubType[newNodePos])));
-				
-						//FLogger.Log(LogType.Debug,"ADDED");
-				}
-				}
-				
-			}
-			
-			if(ID.Count < var.Count){
-				//FLogger.Log(LogType.Debug,"REMOVING NODE");
-					for(int v = 0; v < var.Count; v++){
-					
-						bool nodeFound = false;
-					
-						for(int n = 0; n < ID.Count; n++){
-							if( var[v].ID == ID[n])nodeFound=true;
-						
-						}
-							if(!nodeFound){
-						
-								var.RemoveAt(v);
-							}
-					}
-			}
-			
-		}
 		
 		
-		public void updateVariable(){
-			if(receiveNewValue[0]){
-				var[variablePosition[0]].updateValue(value);
-				//FLogger.Log(LogType.Debug, value[0]);
-			}
-		}
-
 		//called when data for any output pin is requested
 		public void Evaluate(int SpreadMax)
 		{
-			updatePresetBin = false;
-			KeepTrackOfExposedNodes();
-			updateVariable();
-			//var.Clear();
+			if(var.Count != exposedPins.Count || receiveNewValue[0])getExposedPinSettings();
+			if(load[0])loadPreset();
+			
 			nodeName.SliceCount = var.Count;
 			nodeBinSize.SliceCount = var.Count;
 			nodeValue.SliceCount = var.Count;
 			nodeID.SliceCount = var.Count;
 			nodeType.SliceCount = var.Count;
 			
-			presetUpdateBang.SliceCount = 1;
-			nodesUpdated.SliceCount = 1;
-
-			presetUpdateBang[0] = updatePresetBin;
-			
-			nodesUpdated[0]  = true;
-			
 			for (int i = 0; i < var.Count; i++){
+				
 				nodeName[i] = var[i].name;
 				nodeID[i] = var[i].ID;
 				nodeBinSize[i] = var[i].binSize.ToString();
-				
 				nodeType[i] = var[i].type;
-				
 				string val = "";
 				
-				
 				for(int v = 0; v < var[i].binSize; v++){
-		
 					
-						val += string.Join(Environment.NewLine, var[i].value[v]);
-						if(var[i].binSize > 1 && v < var[i].binSize-1)val += ";";
-						
-					
+					val += string.Join(Environment.NewLine, var[i].value[v]);
+					if(var[i].binSize > 1 && v < var[i].binSize-1)val += ";";
 				}
 				
 				nodeValue[i] = val;
-				if(val.Contains("Update Node")
-				
-				)nodesUpdated[0] = false;
-				//FLogger.Log(LogType.Debug, "");
 			}
-			//
-		} 
-	
+		}
 	}
 	
 	
 	public class Variable : IPluginEvaluate
 	{
-			
 		
-	    public String name;
+		
+		public String name;
 		public String ID;
-		public int IDint;
+		//	public int IDint;
 		public String type;
 		public int binSize;
-	 	public List<String> value = new List<String>(); 
+		public List<String> value = new List<String>();
 		
 		
-	   
-	    public Variable(){
-	    	
-	    }
 		
-		public Variable(String _name, String _ID, String _type, int _binSize){
+		public Variable(){
+			
+		}
+		
+		public Variable(String _name, String _ID, String _type, String[] _value){
 			
 			name = _name;
 			ID = _ID;
-			IDint = Int32.Parse(ID);
+			//IDint = Int32.Parse(ID);
 			type = _type;
-			binSize = _binSize;
+			binSize = _value.Length;
 			
-		//	value = new string[binSize];
+			//value = new string[binSize];
 			value.Clear();
 			
 			for(int i = 0; i < binSize; i++){
-				value.Add("Update Node");
+				value.Add(_value[i]);
 			}
-				
+			
 		}
 		
-	public void updateValueAndBinSize(String[] _value){
-		
-		if(_value.Length > binSize){
+		public Variable(String _name, String _ID, String _type, List<String> _value){
 			
-			for(int i = 0; i < value.Count; i++){
-			//	value.RemoveAt(i);
-			}
-		
-		}else{
-			/*
-			updateValue(_value);
-				int addAmount = Math.Abs(_value.Length - binSize);
+			name = _name;
+			ID = _ID;
+			//IDint = Int32.Parse(ID);
+			type = _type;
+			binSize = _value.Count;
 			
-			
-			for(int i = 0; i < addAmount; i++){
-				value.Add( "Update Node");
-			}
-				binSize = value.Count;
-*/
-		}
-			
-	}
-		
-		public void updateValue(ISpread<String> _value){
+			//value = new string[binSize];
 			value.Clear();
 			
-			
-			binSize = _value.Count;
-			if(type == "HSVAField"){
-			
-				for(int i = 0; i < binSize; i++){
-				
-				//	value.Add( _value[0].Split(',')[i]);
-					
-					value.Add( _value[i]);
-					
-				//	FLogger.Log(LogType.Debug, _value[0].Split(',')[i]);
-				}
-				
-				
-				
-			}else{
-			
-				for(int i = 0; i < binSize; i++){
-				
-					value.Add( _value[i]);
-				}
-				
+			for(int i = 0; i < binSize; i++){
+				value.Add(_value[i]);
 			}
+			
 		}
 		
+		public void updateValue(String[] _value){
 			
-		public void updateValue(String[] _value, bool _Init){
-			if(_Init)binSize = _value.Length;
 			value.Clear();
 			for(int i = 0; i < binSize; i++){
 				if(i<_value.Length)value.Add( _value[i]);
@@ -387,8 +251,8 @@ namespace VVVV.Nodes
 			binSize = value.Count;
 		}
 		
-	    public void Evaluate(int SpreadMax)
-	    {
-	    }
+		public void Evaluate(int SpreadMax)
+		{
+		}
 	}
 }
