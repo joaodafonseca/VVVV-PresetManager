@@ -1,0 +1,51 @@
+<Preset>
+  <Node>
+    <Name>Spread Count</Name>
+    <Type>Endless, 1, 1, 0, 99999999, 1, , 4</Type>
+    <Bin>1</Bin>
+    <Value>20</Value>
+    <ID>109</ID>
+  </Node>
+  <Node>
+    <Name>Width</Name>
+    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>4</Value>
+    <ID>110</ID>
+  </Node>
+  <Node>
+    <Name>Factor</Name>
+    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>6.2999</Value>
+    <ID>115</ID>
+  </Node>
+  <Node>
+    <Name>Scale XYZ</Name>
+    <Type>Endless, 3, 1, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>3</Bin>
+    <Value>0.13;0.05;0.05</Value>
+    <ID>114</ID>
+  </Node>
+  <Node>
+    <Name>Phase</Name>
+    <Type>Rotary, 1, 0, 0, 1, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>0.72</Value>
+    <ID>116</ID>
+  </Node>
+  <Node>
+    <Name>Diffuse Color</Name>
+    <Type>HSVAField, r= 85% g= 85% b= 85% a=100% , HasAlpha</Type>
+    <Bin>1</Bin>
+    <Value>0.00000,1.00000,0.63450,1.00000</Value>
+    <ID>121</ID>
+  </Node>
+  <Node>
+    <Name>Width</Name>
+    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
+    <Bin>1</Bin>
+    <Value>1</Value>
+    <ID>122</ID>
+  </Node>
+</Preset>

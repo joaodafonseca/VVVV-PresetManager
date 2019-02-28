@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="31720" scrolly="16170">
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="18820" scrolly="0">
    <NODE systemname="UDP (Network Client)" nodename="UDP (Network Client)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="39370" top="48560" width="100" height="100">
    </BOUNDS>
@@ -13,9 +13,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="30350" top="680" width="795" height="240">
+   <BOUNDS type="Box" left="38950" top="960" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="30350" top="680" width="0" height="0">
+   <BOUNDS type="Node" left="38950" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="5656">
    </PIN>
@@ -28,6 +28,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Listening UDP Port - Remote Port|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
    </PIN>
    </NODE>
    <NODE systemname="PinInfo (VVVV)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="PinInfo (VVVV)" componentmode="Hidden" id="4">
@@ -77,6 +79,8 @@
    </PIN>
    <PIN pinname="Create Directory" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="20730" top="680" width="0" height="0">
@@ -101,9 +105,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="33110" top="680" width="1560" height="240">
+   <BOUNDS type="Box" left="24100" top="960" width="1560" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="33110" top="680" width="0" height="0">
+   <BOUNDS type="Node" left="24100" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\test.xml">
    </PIN>
@@ -131,9 +135,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="19440" top="26180" width="800" height="240">
+   <BOUNDS type="Box" left="19570" top="26180" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="19440" top="26180" width="0" height="0">
+   <BOUNDS type="Node" left="19570" top="26180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Value">
    </PIN>
@@ -145,9 +149,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="20470" top="26180" width="800" height="240">
+   <BOUNDS type="Box" left="20670" top="26180" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="20470" top="26180" width="0" height="0">
+   <BOUNDS type="Node" left="20670" top="26180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Type">
    </PIN>
@@ -159,9 +163,9 @@
    </PIN>
    </NODE>
    <NODE id="13" systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="19440" top="26720" width="100" height="100">
+   <BOUNDS type="Node" left="19570" top="26720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="19440" top="26720" width="2000" height="2000">
+   <BOUNDS type="Box" left="19570" top="26720" width="2000" height="2000">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -170,6 +174,8 @@
    <PIN pinname="Element" visible="1">
    </PIN>
    <PIN pinname="Value" visible="1" slicecount="8" values="|0.33640,0.29090,0.42740,1.00000|,16,7.9884;0.0006;0,0.2298,0.4993,1.7988,1.0063,|0.99880,0.00010,0.00140,1.00000;0.99960,0.59920,0.00140,1.00000;0.80020,0.99860,0.00090,1.00000;0.20120,0.99860,0.00010,1.00000;0.00140,0.99930,0.39950,1.00000;0.00120,0.99990,0.99860,1.00000;0.00040,0.40080,0.99860,1.00000;0.19980,0.00140,0.99910,1.00000;0.79880,0.00140,0.99990,1.00000;0.99860,0.00070,0.60050,1.00000|">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE id="14" systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
@@ -195,7 +201,7 @@
    </PIN>
    <PIN pinname="Attributes Bin Size" pintype="Input" visible="1" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   <PIN pinname="Evaluate" pintype="Input" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Window Handle" pintype="Output">
    </PIN>
@@ -219,6 +225,8 @@
    </PIN>
    <PIN pinname="Attributes Bin Size" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE id="16" systemname="Zip (XElement)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (XElement)" componentmode="Hidden">
    <PIN pinname="Input 2" slicecount="1" visible="1" values="||">
@@ -241,13 +249,15 @@
    </PIN>
    </NODE>
    <NODE id="17" systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="20470" top="26720" width="100" height="100">
+   <BOUNDS type="Node" left="20670" top="26720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="20470" top="26720" width="2000" height="2000">
+   <BOUNDS type="Box" left="20670" top="26720" width="2000" height="2000">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
    <PIN pinname="Value" visible="1" slicecount="6" values="|Endless, 1, 0, -99999999, 99999999, 0.01, , 4|,|Endless, 1, 0, -99999999, 99999999, 0.01, , 4|,|Endless, 3, 0, -99999999, 99999999, 0.01, , 4|,|Toggle, 1, 0, 0, 1, 1, , 4|,|HSVAField, r=  0% g=100% b=  0% a=100% , HasAlpha|,|Bang, 1, 0, 0, 1, 1, , 4|">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="OSCDecoder (Network)" nodename="OSCDecoder (Network)" componentmode="Hidden" id="18">
@@ -275,9 +285,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="27340" top="680" width="800" height="240">
+   <BOUNDS type="Box" left="35940" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="27340" top="680" width="0" height="0">
+   <BOUNDS type="Node" left="35940" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5555">
    </PIN>
@@ -290,6 +300,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Feedback Target UDP Port - Local Port|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
    </PIN>
    </NODE>
    <NODE id="21" systemname="UDP (Network Server)" nodename="UDP (Network Server)" componentmode="Hidden">
@@ -375,6 +387,8 @@
    </PIN>
    <PIN pinname="Name" slicecount="1" visible="1" values="Name">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29" systemname="IOBox (String)">
    <BOUNDS type="Box" left="17350" top="26180" width="800" height="240">
@@ -413,6 +427,8 @@
    </PIN>
    <PIN pinname="Children" visible="1">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE systemname="AsXElement (XML)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsXElement (XML)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="29430" top="9840" width="100" height="100">
@@ -441,11 +457,13 @@
    </PIN>
    <PIN pinname="Attributes" visible="1">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE id="38" systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="18420" top="26720" width="100" height="100">
+   <BOUNDS type="Node" left="18470" top="26720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="18420" top="26720" width="2000" height="2000">
+   <BOUNDS type="Box" left="18470" top="26720" width="2000" height="2000">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -455,11 +473,13 @@
    </PIN>
    <PIN pinname="Name" slicecount="1" visible="1" values="Name">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="39" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18410" top="26180" width="800" height="240">
+   <BOUNDS type="Box" left="18460" top="26180" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="18410" top="26180" width="0" height="0">
+   <BOUNDS type="Node" left="18460" top="26180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Bin">
    </PIN>
@@ -478,6 +498,8 @@
    <PIN pinname="Element" visible="1">
    </PIN>
    <PIN pinname="Value" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="41">
@@ -511,9 +533,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="43" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="35870" top="610" width="1150" height="260">
+   <BOUNDS type="Box" left="26860" top="960" width="1150" height="260">
    </BOUNDS>
-   <BOUNDS type="Node" left="35870" top="610" width="0" height="0">
+   <BOUNDS type="Node" left="26860" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\test.xml">
    </PIN>
@@ -531,7 +553,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OSCEncoder (Network)" nodename="OSCEncoder (Network)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="42105" top="42075" width="100" height="100">
+   <BOUNDS type="Node" left="42175" top="43965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Type Tags" visible="1">
    </PIN>
@@ -542,6 +564,8 @@
    <PIN pinname="Address" visible="1">
    </PIN>
    <PIN pinname="Arguments" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="49">
@@ -645,9 +669,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="21500" top="26180" width="800" height="240">
+   <BOUNDS type="Box" left="21770" top="26180" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="21500" top="26180" width="0" height="0">
+   <BOUNDS type="Node" left="21770" top="26180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="ID">
    </PIN>
@@ -659,15 +683,17 @@
    </PIN>
    </NODE>
    <NODE id="63" systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="21500" top="26720" width="100" height="100">
+   <BOUNDS type="Node" left="21770" top="26720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="21500" top="26720" width="2000" height="2000">
+   <BOUNDS type="Box" left="21770" top="26720" width="2000" height="2000">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
    <PIN pinname="Value" visible="1" slicecount="8" values="6,29,34,65,67,68,76,84">
    </PIN>
    <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="66">
@@ -757,27 +783,27 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="17" srcpinname="Element" dstnodeid="16" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="19815" y="27215">
+   <LINKPOINT x="19955" y="27215">
    </LINKPOINT>
-   <LINKPOINT x="18365" y="27255">
+   <LINKPOINT x="18425" y="27255">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="38" srcpinname="Element" dstnodeid="16" dstpinname="Input 3" linkstyle="VHV">
-   <LINKPOINT x="18420" y="27235">
+   <LINKPOINT x="18455" y="27235">
    </LINKPOINT>
-   <LINKPOINT x="17760" y="27235">
+   <LINKPOINT x="17775" y="27235">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="13" srcpinname="Element" dstnodeid="16" dstpinname="Input 4" linkstyle="VHV">
-   <LINKPOINT x="19440" y="27235">
+   <LINKPOINT x="19531" y="27235">
    </LINKPOINT>
-   <LINKPOINT x="17930" y="27235">
+   <LINKPOINT x="17969" y="27235">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="63" srcpinname="Element" dstnodeid="16" dstpinname="Input 5" linkstyle="VHV">
-   <LINKPOINT x="21500" y="27235">
+   <LINKPOINT x="21689" y="27235">
    </LINKPOINT>
-   <LINKPOINT x="18100" y="27235">
+   <LINKPOINT x="18181" y="27235">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="29" srcpinname="Output String" dstnodeid="28" dstpinname="Name">
@@ -795,9 +821,9 @@
    <LINK srcnodeid="21" srcpinname="Queue Count" dstnodeid="19" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Local Port" linkstyle="VHV">
-   <LINKPOINT x="27329" y="12347">
+   <LINKPOINT x="33062" y="12534">
    </LINKPOINT>
-   <LINKPOINT x="16971" y="12353">
+   <LINKPOINT x="19838" y="12446">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="18" srcpinname="Arguments" dstnodeid="27" dstpinname="Input" linkstyle="VHV">
@@ -819,15 +845,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Listening UDP Port" linkstyle="VHV">
-   <LINKPOINT x="29756" y="9814">
+   <LINKPOINT x="35489" y="10001">
    </LINKPOINT>
-   <LINKPOINT x="22054" y="10106">
+   <LINKPOINT x="24921" y="10199">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Feedback Target UDP Port" linkstyle="VHV">
-   <LINKPOINT x="27299" y="5712">
+   <LINKPOINT x="33032" y="5899">
    </LINKPOINT>
-   <LINKPOINT x="22331" y="5718">
+   <LINKPOINT x="25198" y="5811">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="13" dstpinname="Name">
@@ -835,9 +861,9 @@
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="17" dstpinname="Name">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Subtype" dstnodeid="17" dstpinname="Value" linkstyle="VHV">
-   <LINKPOINT x="23187" y="19015">
+   <LINKPOINT x="23247" y="19015">
    </LINKPOINT>
-   <LINKPOINT x="20743" y="18975">
+   <LINKPOINT x="20883" y="18975">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="62" srcpinname="Output String" dstnodeid="63" dstpinname="Name">
@@ -893,26 +919,26 @@
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="49" dstpinname="Bin Size">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Exposed Pins" dstnodeid="45" dstpinname="Address" linkstyle="VHV">
-   <LINKPOINT x="21906" y="25227">
+   <LINKPOINT x="21929" y="25857">
    </LINKPOINT>
-   <LINKPOINT x="41654" y="27613">
+   <LINKPOINT x="41701" y="28873">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="45" dstpinname="Type Tags">
    </LINK>
    <LINK srcnodeid="45" srcpinname="OSCMessage" dstnodeid="2" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="42114" y="45445">
+   <LINKPOINT x="42161" y="46705">
    </LINKPOINT>
-   <LINKPOINT x="39416" y="45445">
+   <LINKPOINT x="39439" y="46075">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Remote Port" linkstyle="VHV">
-   <LINKPOINT x="29286" y="22783">
+   <LINKPOINT x="35019" y="22970">
    </LINKPOINT>
-   <LINKPOINT x="41024" y="26777">
+   <LINKPOINT x="43891" y="26870">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="10050" top="1690" width="11590" height="6870">
+   <BOUNDS type="Window" left="3770" top="2580" width="11590" height="6870">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -1131,9 +1157,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="110">
-   <BOUNDS type="Box" left="38470" top="680" width="800" height="240">
+   <BOUNDS type="Box" left="29460" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="38470" top="680" width="0" height="0">
+   <BOUNDS type="Node" left="29460" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="7.01">
    </PIN>
@@ -1182,24 +1208,16 @@
    <LINKPOINT x="43628" y="22398">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="132">
-   <BOUNDS type="Node" left="48750" top="27630" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   <PIN pinname="Input" slicecount="1" visible="1" values="0">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="110" srcpinname="Y Output Value" dstnodeid="109" dstpinname="FilterTime" linkstyle="VHV">
-   <LINKPOINT x="39750" y="25083">
+   <LINKPOINT x="33743" y="25190">
    </LINKPOINT>
-   <LINKPOINT x="44390" y="27687">
+   <LINKPOINT x="41387" y="27740">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="110" srcpinname="Y Output Value" dstnodeid="84" dstpinname="FilterTime" linkstyle="Bezier">
-   <LINKPOINT x="38500" y="15300">
+   <LINKPOINT x="32493" y="15407">
    </LINKPOINT>
-   <LINKPOINT x="42110" y="15300">
+   <LINKPOINT x="39107" y="15353">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140">
@@ -1269,15 +1287,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="148" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="35555" y="17173">
+   <LINKPOINT x="29548" y="17280">
    </LINKPOINT>
-   <LINKPOINT x="26915" y="17197">
+   <LINKPOINT x="23912" y="17250">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="148" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="32515" y="33148">
+   <LINKPOINT x="26508" y="33255">
    </LINKPOINT>
-   <LINKPOINT x="27465" y="33002">
+   <LINKPOINT x="24462" y="33055">
    </LINKPOINT>
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="149">
@@ -1307,8 +1325,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="149" srcpinname="Output" dstnodeid="7" dstpinname="Write">
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="132" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="151">
    <BOUNDS type="Box" left="46490" top="48550" width="480" height="480">
@@ -1383,9 +1399,9 @@
    <LINK srcnodeid="84" srcpinname="Position Out" dstnodeid="172" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="173">
-   <BOUNDS type="Box" left="40290" top="680" width="480" height="480">
+   <BOUNDS type="Box" left="31280" top="960" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="40290" top="680" width="0" height="0">
+   <BOUNDS type="Node" left="31280" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1421,27 +1437,15 @@
    <LINK srcnodeid="171" srcpinname="Output" dstnodeid="111" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="173" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Switch" linkstyle="VHV">
-   <LINKPOINT x="41766" y="21253">
+   <LINKPOINT x="35759" y="21360">
    </LINKPOINT>
-   <LINKPOINT x="43454" y="26057">
+   <LINKPOINT x="40451" y="26110">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="173" srcpinname="Y Output Value" dstnodeid="172" dstpinname="Switch" linkstyle="VHV">
-   <LINKPOINT x="41600" y="20368">
+   <LINKPOINT x="35593" y="20475">
    </LINKPOINT>
-   <LINKPOINT x="40100" y="25292">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="84" dstpinname="Reset" linkstyle="VHV">
-   <LINKPOINT x="48952" y="28951">
-   </LINKPOINT>
-   <LINKPOINT x="42368" y="29299">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="109" dstpinname="Reset" linkstyle="VHV">
-   <LINKPOINT x="48783" y="29880">
-   </LINKPOINT>
-   <LINKPOINT x="46057" y="29880">
+   <LINKPOINT x="37097" y="25345">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="180">
@@ -1509,9 +1513,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="202">
-   <BOUNDS type="Box" left="24360" top="680" width="800" height="240">
+   <BOUNDS type="Box" left="32960" top="960" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="24360" top="680" width="0" height="0">
+   <BOUNDS type="Node" left="32960" top="960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
    </PIN>
@@ -1525,17 +1529,19 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
+   </PIN>
    </NODE>
    <LINK srcnodeid="202" srcpinname="Output String" dstnodeid="5" dstpinname="Feedback Target IP" linkstyle="VHV">
-   <LINKPOINT x="25350" y="9796">
+   <LINKPOINT x="31083" y="9983">
    </LINKPOINT>
-   <LINKPOINT x="21140" y="9944">
+   <LINKPOINT x="24007" y="10037">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="202" srcpinname="Output String" dstnodeid="2" dstpinname="Remote Host" linkstyle="VHV">
-   <LINKPOINT x="24870" y="40430">
+   <LINKPOINT x="30603" y="40617">
    </LINKPOINT>
-   <LINKPOINT x="39280" y="44280">
+   <LINKPOINT x="42147" y="44373">
    </LINKPOINT>
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="204">
@@ -1547,9 +1553,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="173" srcpinname="Y Output Value" dstnodeid="204" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="41073" y="25166">
+   <LINKPOINT x="35066" y="25273">
    </LINKPOINT>
-   <LINKPOINT x="48237" y="25214">
+   <LINKPOINT x="45234" y="25267">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="204" srcpinname="Output" dstnodeid="144" dstpinname="Input 2">
@@ -1959,9 +1965,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="280" srcpinname="Output" dstnodeid="45" dstpinname="Arguments" linkstyle="Bezier">
-   <LINKPOINT x="46496" y="40080">
+   <LINKPOINT x="46519" y="40710">
    </LINKPOINT>
-   <LINKPOINT x="43104" y="40080">
+   <LINKPOINT x="43151" y="41340">
    </LINKPOINT>
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="283">
@@ -2023,21 +2029,21 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="300" srcpinname="NodeBinSize" dstnodeid="38" dstpinname="Value" linkstyle="VHV">
-   <LINKPOINT x="14332" y="22605">
+   <LINKPOINT x="14347" y="22605">
    </LINKPOINT>
-   <LINKPOINT x="16138" y="24145">
+   <LINKPOINT x="16173" y="24145">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="300" srcpinname="NodeValue" dstnodeid="13" dstpinname="Value" linkstyle="VHV">
-   <LINKPOINT x="14792" y="22600">
+   <LINKPOINT x="14831" y="22600">
    </LINKPOINT>
-   <LINKPOINT x="17148" y="24140">
+   <LINKPOINT x="17239" y="24140">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="300" srcpinname="NodeID" dstnodeid="63" dstpinname="Value" linkstyle="VHV">
-   <LINKPOINT x="13492" y="22600">
+   <LINKPOINT x="13573" y="22600">
    </LINKPOINT>
-   <LINKPOINT x="19178" y="24140">
+   <LINKPOINT x="19367" y="24140">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="300" srcpinname="NodeValue" dstnodeid="90" dstpinname="Spread" linkstyle="VHV">
@@ -2127,9 +2133,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="229" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="35870" y="3950">
+   <LINKPOINT x="29863" y="4057">
    </LINKPOINT>
-   <LINKPOINT x="29490" y="3950">
+   <LINKPOINT x="26487" y="4003">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="280" srcpinname="Output" dstnodeid="160" dstpinname="Input 1">
@@ -2157,5 +2163,93 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="236" srcpinname="Output" dstnodeid="151" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Evaluate" linkstyle="VHV">
+   <LINKPOINT x="18890" y="5800">
+   </LINKPOINT>
+   <LINKPOINT x="31030" y="5800">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Evaluate" linkstyle="VHV">
+   <LINKPOINT x="18890" y="6145">
+   </LINKPOINT>
+   <LINKPOINT x="31510" y="6145">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Evaluate" linkstyle="VHV">
+   <LINKPOINT x="18890" y="6480">
+   </LINKPOINT>
+   <LINKPOINT x="32000" y="6480">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="311" srcpinname="Output" dstnodeid="45" dstpinname="Evaluate" linkstyle="VHV">
+   <LINKPOINT x="46573" y="43347">
+   </LINKPOINT>
+   <LINKPOINT x="43097" y="43293">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="312">
+   <BOUNDS type="Node" left="22770" top="24780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="312" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="312" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="313">
+   <BOUNDS type="Box" left="22770" top="25280" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="22770" top="25280" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Evaluate" linkstyle="VHV">
+   <LINKPOINT x="22920" y="30593">
+   </LINKPOINT>
+   <LINKPOINT x="26840" y="30257">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output" dstnodeid="313" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="84" dstpinname="Reset" linkstyle="VHV">
+   <LINKPOINT x="48952" y="28951">
+   </LINKPOINT>
+   <LINKPOINT x="42368" y="29299">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="109" dstpinname="Reset" linkstyle="VHV">
+   <LINKPOINT x="48783" y="29880">
+   </LINKPOINT>
+   <LINKPOINT x="46057" y="29880">
+   </LINKPOINT>
    </LINK>
    </PATCH>

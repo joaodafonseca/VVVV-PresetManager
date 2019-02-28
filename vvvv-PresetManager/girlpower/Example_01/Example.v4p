@@ -641,7 +641,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="72">
-   <BOUNDS type="Box" left="8790" top="3960" width="1580" height="1680">
+   <BOUNDS type="Box" left="8790" top="3960" width="1380" height="1670">
    </BOUNDS>
    <BOUNDS type="Node" left="8790" top="3960" width="0" height="0">
    </BOUNDS>
@@ -665,7 +665,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="880" top="10050" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="18710" top="180" width="9000" height="8670">
+   <BOUNDS type="Window" left="18770" top="200" width="9000" height="8670">
    </BOUNDS>
    <PIN pinname="Background Color" visible="1">
    </PIN>
@@ -815,7 +815,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5950" top="5220" width="47550" height="32575">
    </BOUNDS>
-   <BOUNDS type="Window" left="10050" top="1690" width="11590" height="6870">
+   <BOUNDS type="Window" left="16950" top="1340" width="11590" height="6870">
    </BOUNDS>
    <PIN pinname="Write" visible="1">
    </PIN>
