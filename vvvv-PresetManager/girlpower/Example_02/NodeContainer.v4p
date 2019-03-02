@@ -1,0 +1,73 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_02\NodeContainer.v4p" systemname="NodeContainer" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_02\NodeContainer.v4p" scrollx="20" scrolly="50">
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="0" exposed="1">
+   <BOUNDS type="Node" left="340" top="450" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="340" top="450" width="1700" height="3220">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color 10|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Color Input" visible="1" slicecount="10" values="|1.00000,0.30000,0.00000,1.00000|,|1.00000,0.90000,0.00000,1.00000|,|0.50000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.10000,1.00000|,|0.00000,1.00000,0.70000,1.00000|,|0.00000,0.70000,1.00000,1.00000|,|0.00000,0.10000,1.00000,1.00000|,|0.50000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.90000,1.00000|,|1.00000,0.00000,0.30000,1.00000|">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="15620" top="9420" width="6320" height="4740">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" exposed="1">
+   <BOUNDS type="Node" left="2280" top="450" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2280" top="450" width="930" height="3220">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Toggle 10|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="10" values="0.4993,0.4993,0.4993,0.4993,0.4993,0.5007,0.5007,0.5007,0.5007,0.5007">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" exposed="1">
+   <BOUNDS type="Node" left="3450" top="450" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3450" top="450" width="830" height="3190">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Vec 10|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="10" values="0.05,0.15,0.25,0.35,0.45,-0.45,-0.35,-0.25,-0.15,-0.05">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" exposed="1">
+   <BOUNDS type="Node" left="4570" top="450" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4570" top="450" width="780" height="3180">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Int 10|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="10" values="0.5004,1.5004,1.5005,3.5004,4.5004,-3.5005,-3.5003,-2.4996,-1.4996,-0.4996">
+   </PIN>
+   </NODE>
+   </PATCH>
