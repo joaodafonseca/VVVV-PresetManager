@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_02\Example_02.v4p" scrollx="100" scrolly="0" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
    <BOUNDS type="Window" left="0" top="150" width="15790" height="13950">
    </BOUNDS>
@@ -78,12 +78,12 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" componentmode="Hidden" id="46" stayontop="1">
+   <NODE systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" componentmode="InAWindow" id="46" stayontop="1">
    <BOUNDS type="Node" left="7730" top="7787" width="6100" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="4690" top="3830" width="47550" height="32575">
    </BOUNDS>
-   <BOUNDS type="Window" left="22240" top="2890" width="18480" height="15110">
+   <BOUNDS type="Window" left="15590" top="2850" width="20110" height="15110">
    </BOUNDS>
    <PIN pinname="Write" visible="1">
    </PIN>
@@ -215,7 +215,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13480" top="5490" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -331,7 +331,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="310" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.4849">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -449,7 +449,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1590" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.03,0.15,0.03">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.12,0.12,0.12">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -475,7 +475,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2840" top="2970" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.05">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -495,7 +495,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2840" top="3530" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.68">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -555,7 +555,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3980" top="2420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.97040,0.00000,0.16210,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Diffuse Color|">
    </PIN>
@@ -571,7 +571,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2840" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -805,11 +805,11 @@
    </PIN>
    </NODE>
    <NODE systemname="NodeContainer" filename="NodeContainer.v4p" nodename="NodeContainer.v4p" componentmode="InAWindow" id="146">
-   <BOUNDS type="Node" left="4960" top="5420" width="0" height="0">
+   <BOUNDS type="Node" left="3600" top="8980" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3410" top="3870" width="3100" height="3100">
+   <BOUNDS type="Box" left="2050" top="7430" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="15660" top="9380" width="6320" height="4740">
+   <BOUNDS type="Window" left="7660" top="12870" width="6320" height="4740">
    </BOUNDS>
    </NODE>
    </PATCH>
