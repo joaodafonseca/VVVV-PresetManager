@@ -367,7 +367,7 @@
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="311" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="18730" top="14050" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -413,9 +413,9 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="406">
-   <BOUNDS type="Node" left="16030" top="10720" width="100" height="100">
+   <BOUNDS type="Node" left="16020" top="10720" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="4">
+   <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Input 3" visible="1">
    </PIN>
@@ -427,11 +427,13 @@
    </PIN>
    <PIN pinname="Input 4" visible="1">
    </PIN>
+   <PIN pinname="Input 5" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="407">
-   <BOUNDS type="Box" left="16900" top="9480" width="480" height="480">
+   <BOUNDS type="Box" left="16020" top="9100" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16900" top="9480" width="0" height="0">
+   <BOUNDS type="Node" left="16020" top="9100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -497,9 +499,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="424">
-   <BOUNDS type="Box" left="19360" top="10070" width="480" height="480">
+   <BOUNDS type="Box" left="19400" top="9740" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="19360" top="10070" width="0" height="0">
+   <BOUNDS type="Node" left="19400" top="9740" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -617,9 +619,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="424" srcpinname="Y Output Value" dstnodeid="406" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="19798" y="10539">
+   <LINKPOINT x="19825" y="10319">
    </LINKPOINT>
-   <LINKPOINT x="15852" y="10721">
+   <LINKPOINT x="15865" y="10611">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Remote Port" linkstyle="VHV">
@@ -633,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17830" top="13100" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="49" values="1,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -729,9 +731,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="424" srcpinname="Y Output Value" dstnodeid="406" dstpinname="Input 4" linkstyle="VHV">
-   <LINKPOINT x="19417" y="10886">
+   <LINKPOINT x="19444" y="10666">
    </LINKPOINT>
-   <LINKPOINT x="16573" y="10744">
+   <LINKPOINT x="16586" y="10634">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="429">
@@ -757,9 +759,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="431">
-   <BOUNDS type="Box" left="16820" top="11860" width="480" height="480">
+   <BOUNDS type="Box" left="16790" top="11960" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16820" top="11860" width="0" height="0">
+   <BOUNDS type="Node" left="16790" top="11960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -794,7 +796,11 @@
    <LINKPOINT x="15680" y="11660">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="398" srcpinname="Values" dstnodeid="45" dstpinname="Arguments">
+   <LINK srcnodeid="398" srcpinname="Values" dstnodeid="45" dstpinname="Arguments" linkstyle="VHV">
+   <LINKPOINT x="15100" y="14540">
+   </LINKPOINT>
+   <LINKPOINT x="14070" y="14540">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="173" srcpinname="Y Output Value" dstnodeid="398" dstpinname="Morph" linkstyle="VHV">
    <LINKPOINT x="20410" y="11760">
@@ -815,9 +821,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="406" srcpinname="Output" dstnodeid="431" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="16090" y="11425">
+   <LINKPOINT x="16080" y="11458">
    </LINKPOINT>
-   <LINKPOINT x="16810" y="11425">
+   <LINKPOINT x="16790" y="11492">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="398" srcpinname="Update Nodes" dstnodeid="426" dstpinname="Y Input Value">
@@ -897,5 +903,17 @@
    <LINK srcnodeid="444" srcpinname="Output String" dstnodeid="439" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="439" srcpinname="Output" dstnodeid="433" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="449">
+   <BOUNDS type="Node" left="13920" top="9220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Node Label" dstnodeid="449" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="449" srcpinname="OnChange" dstnodeid="406" dstpinname="Input 5">
    </LINK>
    </PATCH>
