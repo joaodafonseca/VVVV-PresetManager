@@ -85,16 +85,13 @@ namespace VVVV.Nodes
 		
 			
 			for (int i = 0; i < exposedPins.Count; i++) {
-				exposedNodes[i] ="";
-			
-				if(receiveNewValue[0]){
-				
 				var nodePath = exposedPins[i].Substring(0, exposedPins[i].LastIndexOf('/'));
 				var node = FHDEHost.GetNodeFromPath(nodePath);
 				
-				
+				exposedNodes[i] ="";
 				
 				//
+				
 			//	if (exposedPins[i]) {
 					if (node != null) {
 						
@@ -156,7 +153,7 @@ namespace VVVV.Nodes
 				
 				
 				}
-			}
+			//}
 			
 		}
 	}
