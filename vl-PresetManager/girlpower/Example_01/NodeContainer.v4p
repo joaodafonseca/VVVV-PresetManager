@@ -12,7 +12,11 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/NodeContainer.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/NodeContainer.v4p
    <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|">
+=======
+   <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.68750,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/NodeContainer.v4p
 =======
    <PIN pinname="Color Input" visible="1" slicecount="10" values="|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.68750,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|">
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/NodeContainer.v4p
@@ -38,7 +42,11 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/NodeContainer.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/NodeContainer.v4p
    <PIN pinname="Y Input Value" visible="1" slicecount="10" values="3,4,-5,-4,-3,-2,-1,0,1,2">
+=======
+   <PIN pinname="Y Input Value" visible="1" slicecount="10" values="-1.516295,-0.5029819,-0.4818307,0.5029819,1.516295,2.501068,3.511989,-4.518863,-3.511989,-2.501068">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/NodeContainer.v4p
 =======
    <PIN pinname="Y Input Value" visible="1" slicecount="10" values="-1.516295,-0.5029819,-0.4818307,0.5029819,1.516295,2.501068,3.511989,-4.518863,-3.511989,-2.501068">
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/NodeContainer.v4p
@@ -56,7 +64,11 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/NodeContainer.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/NodeContainer.v4p
    <PIN pinname="Y Input Value" visible="1" slicecount="10" values="0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2">
+=======
+   <PIN pinname="Y Input Value" visible="1" slicecount="10" values="-0.2,-0.1,0,0.1,0.2,0.3,0.4,-0.5,-0.4,-0.3">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/NodeContainer.v4p
 =======
    <PIN pinname="Y Input Value" visible="1" slicecount="10" values="-0.2,-0.1,0,0.1,0.2,0.3,0.4,-0.5,-0.4,-0.3">
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/NodeContainer.v4p

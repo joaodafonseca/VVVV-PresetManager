@@ -1,7 +1,12 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Example_01.v4p" scrollx="40" scrolly="50" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
    <BOUNDS type="Window" left="130" top="0" width="15890" height="13950">
+=======
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_02\Example_02.v4p" scrollx="50" scrolly="60" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
+   <BOUNDS type="Window" left="380" top="150" width="15950" height="13950">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
 =======
    <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vvvv-PresetManager\girlpower\Example_02\Example_02.v4p" scrollx="50" scrolly="60" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
    <BOUNDS type="Window" left="380" top="150" width="15950" height="13950">
@@ -13,9 +18,15 @@
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <BOUNDS type="Box" left="7730" top="11400" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="7730" top="11400" width="0" height="0">
+=======
+   <BOUNDS type="Box" left="14050" top="8920" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14050" top="8920" width="0" height="0">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
 =======
    <BOUNDS type="Box" left="14050" top="8920" width="480" height="480">
    </BOUNDS>
@@ -379,7 +390,11 @@
    <BOUNDS type="Node" left="1420" top="2410" width="0" height="0">
    </BOUNDS>
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.1,0.16,0.12">
+=======
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.1199975,0.1200011,0.1199975">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
 =======
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.1199975,0.1200011,0.1199975">
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
@@ -730,6 +745,7 @@
    </PIN>
    </NODE>
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <NODE systemname="NodeContainer" filename="NodeContainer.v4p" nodename="NodeContainer.v4p" componentmode="InAWindow" id="146" stayontop="0">
    <BOUNDS type="Node" left="2900" top="3610" width="0" height="0">
    </BOUNDS>
@@ -744,6 +760,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2050" top="7430" width="3100" height="3100">
    </BOUNDS>
+=======
+   <NODE systemname="NodeContainer" filename="NodeContainer.v4p" nodename="NodeContainer.v4p" componentmode="InAWindow" id="146" stayontop="1">
+   <BOUNDS type="Node" left="3600" top="8980" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2050" top="7430" width="3100" height="3100">
+   </BOUNDS>
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
    <BOUNDS type="Window" left="13910" top="11780" width="6320" height="4740">
    </BOUNDS>
    </NODE>
@@ -761,6 +784,9 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
+=======
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
    <NODE id="46" componentmode="InAWindow" systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" stayontop="0" debug="0">
    <BOUNDS type="Window" left="17980" top="2120" width="20110" height="15110">
@@ -808,8 +834,11 @@
    <PIN pinname="Save" slicecount="1" visible="1" values="0">
    </PIN>
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <PIN pinname="Current Preset" visible="1" slicecount="12" values="Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml,Presets\PRESET_04.xml">
    </PIN>
+=======
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
 =======
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
    </NODE>
@@ -853,9 +882,15 @@
    </LINK>
    <LINK srcnodeid="46" srcpinname="Preset Loaded" dstnodeid="51" dstpinname="Y Input Value" linkstyle="VHV">
 <<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <LINKPOINT x="11739" y="9108">
    </LINKPOINT>
    <LINKPOINT x="9851" y="9932">
+=======
+   <LINKPOINT x="13800" y="8270">
+   </LINKPOINT>
+   <LINKPOINT x="14080" y="8270">
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
 =======
    <LINKPOINT x="13800" y="8270">
    </LINKPOINT>
@@ -875,6 +910,7 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="11">
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
@@ -888,6 +924,8 @@
    <BOUNDS type="Box" left="3470" top="2970" width="800" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" pintype="Input" visible="1" values="|Preset 1|">
+=======
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="String">
    </PIN>
@@ -921,6 +959,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
    </PIN>
+<<<<<<< HEAD:vl-PresetManager/girlpower/Example_01/Example_01.v4p
    <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
    </PIN>
    <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
@@ -957,5 +996,10 @@
    </LINKPOINT>
    </LINK>
 =======
+>>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
+=======
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Exposed Nodes" dstnodeid="151" dstpinname="Input String">
+   </LINK>
 >>>>>>> parent of 4287104... vl implementation:vl-PresetManager/girlpower/Example_02/Example_02.v4p
    </PATCH>
