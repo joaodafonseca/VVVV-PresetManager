@@ -345,7 +345,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1420" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.12,0.12,0.12">
+   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.1,0.16,0.12">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -700,7 +700,7 @@
    <BOUNDS type="Window" left="15940" top="9220" width="6320" height="4740">
    </BOUNDS>
    </NODE>
-   <NODE id="46" componentmode="Hidden" systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" stayontop="0" debug="0">
+   <NODE id="46" componentmode="InAWindow" systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" stayontop="0" debug="0">
    <BOUNDS type="Window" left="17050" top="0" width="12980" height="17940">
    </BOUNDS>
    <BOUNDS type="Node" left="7730" top="7790" width="6100" height="270">

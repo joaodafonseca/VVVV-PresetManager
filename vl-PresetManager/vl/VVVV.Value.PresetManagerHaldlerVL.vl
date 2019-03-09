@@ -1165,7 +1165,7 @@
                   <Pin Id="PsSX4WAGsY9MmeJbPKINqc" Name="Input 2" Kind="InputPin" />
                   <Pin Id="KMOEMoajjNUO60DCWD8N4x" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="841,261" Id="TBRvHUVwlVQOciVx2pUdBr">
+                <Node Bounds="227,130,25,13" Id="TBRvHUVwlVQOciVx2pUdBr">
                   <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="OR" />

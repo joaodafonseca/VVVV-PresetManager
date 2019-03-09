@@ -927,7 +927,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="11" visible="1">
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
    </PIN>
    </NODE>
    <LINK srcnodeid="450" srcpinname="Output" dstnodeid="452" dstpinname="Input">
