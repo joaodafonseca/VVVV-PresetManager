@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="12750" scrolly="2730">
+   <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\PresetManager.v4p" systemname="PresetManager" filename="C:\Users\joao_\Desktop\PresetManager\PresetManager.v4p" scrollx="12720" scrolly="4210">
    <NODE systemname="UDP (Network Client)" nodename="UDP (Network Client)" componentmode="Hidden" id="2" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="13330" top="15250" width="100" height="100">
    </BOUNDS>
@@ -177,7 +177,7 @@
    </PIN>
    <PIN pinname="Address" visible="1">
    </PIN>
-   <PIN pinname="Arguments" visible="1" slicecount="49" values="20,4,0.13,0.05,0.6099848,6.3,0.72,|0.9999728,0.8851531,1.686493E-05,1|,12.60968,|0.2000163,0.9999728,2.724545E-05,1|,|2.724545E-05,0.9999728,0.4000055,1|,|2.724545E-05,0.9999728,0.9999728,1|,|2.724545E-05,0.4000055,0.9999728,1|,|0.2000163,2.724545E-05,0.9999728,1|,|0.7999837,2.724545E-05,0.9999728,1|,|0.9999728,2.724545E-05,0.5999946,1|,|0.9999728,2.724545E-05,2.724545E-05,1|,|0.9999728,0.5999946,2.724545E-05,1|,|0.7999837,0.9999728,2.724545E-05,1|,2,3,-5,-4,-3,-2,-1,-1,0,1,0.2999864,0.3999864,-0.4999864,-0.3999864,-0.2999864,-0.1999864,-0.09998638,-1.362273E-05,0.09998638,0.1999864,1,1,1,1,1,0.9999728,0.9999728,0.9999728,0.9999728,0.9999728">
+   <PIN pinname="Arguments" visible="1" slicecount="600" values="20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|,20,4,0.13,0.05,0.05,6.2999,0.72,|0.00000,1.00000,0.61900,1.00000|,1,|0.20000,1.00000,0.00000,1.00000|,|0.00000,1.00000,0.40000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.00000,0.40000,1.00000,1.00000|,|0.20000,0.00000,1.00000,1.00000|,|0.80000,0.00000,1.00000,1.00000|,|1.00000,0.00000,0.60000,1.00000|,|1.00000,0.00000,0.00000,1.00000|,|1.00000,0.60000,0.00000,1.00000|,|0.80000,1.00000,0.00000,1.00000|,3,4,-5,-4,-3,-2,-1,0,1,2,0.3,0.4,-0.5,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,1,1,1,1,1,1,1,1,1,1,|Preset 2|">
    </PIN>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -189,7 +189,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" visible="1" values="-1">
+   <PIN pinname="Bin Size" slicecount="144" visible="1" values="1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1,1,1,3,1,1,1,1,10,10,10,10,1">
    </PIN>
    </NODE>
    <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="69">
@@ -293,9 +293,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="151" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="18760" top="15840" width="480" height="480">
+   <BOUNDS type="Box" left="18740" top="15840" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="18760" top="15840" width="0" height="0">
+   <BOUNDS type="Node" left="18740" top="15840" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -365,7 +365,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="311" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="18730" top="14050" width="100" height="100">
+   <BOUNDS type="Node" left="18740" top="15360" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -401,19 +401,19 @@
    </BOUNDS>
    <PIN pinname="Save Current" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Morph" visible="1" slicecount="1" values="0">
+   <PIN pinname="Morph" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Current Preset" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="404">
-   <BOUNDS type="Node" left="16020" top="9690" width="100" height="100">
+   <BOUNDS type="Node" left="16020" top="9950" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="406">
-   <BOUNDS type="Node" left="16020" top="10720" width="100" height="100">
+   <BOUNDS type="Node" left="16020" top="10800" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
@@ -431,9 +431,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="407">
-   <BOUNDS type="Box" left="16020" top="9100" width="480" height="480">
+   <BOUNDS type="Box" left="16020" top="9360" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16020" top="9100" width="0" height="0">
+   <BOUNDS type="Node" left="16020" top="9360" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -451,7 +451,7 @@
    <LINK srcnodeid="407" srcpinname="Y Output Value" dstnodeid="406" dstpinname="Input 3">
    </LINK>
    <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="408">
-   <BOUNDS type="Node" left="16020" top="10070" width="100" height="100">
+   <BOUNDS type="Node" left="16020" top="10330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -499,9 +499,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="424">
-   <BOUNDS type="Box" left="19400" top="9740" width="480" height="480">
+   <BOUNDS type="Box" left="19400" top="10000" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="19400" top="9740" width="0" height="0">
+   <BOUNDS type="Node" left="19400" top="10000" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -618,12 +618,6 @@
    <LINKPOINT x="15982" y="5480">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="424" srcpinname="Y Output Value" dstnodeid="406" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="19825" y="10319">
-   </LINKPOINT>
-   <LINKPOINT x="15865" y="10611">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Remote Port" linkstyle="VHV">
    <LINKPOINT x="22090" y="15190">
    </LINKPOINT>
@@ -731,15 +725,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="424" srcpinname="Y Output Value" dstnodeid="406" dstpinname="Input 4" linkstyle="VHV">
-   <LINKPOINT x="19444" y="10666">
+   <LINKPOINT x="19430" y="10806">
    </LINKPOINT>
-   <LINKPOINT x="16586" y="10634">
+   <LINKPOINT x="16570" y="10734">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="429">
-   <BOUNDS type="Box" left="20250" top="15520" width="800" height="240">
+   <BOUNDS type="Box" left="20780" top="16790" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="20250" top="15520" width="0" height="0">
+   <BOUNDS type="Node" left="20780" top="16790" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -751,13 +745,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Current Preset|">
    </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="398" srcpinname="Current Preset" dstnodeid="429" dstpinname="Input String" linkstyle="VHV">
-   <LINKPOINT x="17887" y="15917">
-   </LINKPOINT>
-   <LINKPOINT x="20283" y="15403">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="431">
    <BOUNDS type="Box" left="16790" top="11960" width="480" height="480">
    </BOUNDS>
@@ -815,25 +805,29 @@
    <LINK srcnodeid="406" srcpinname="Output" dstnodeid="423" dstpinname="ReceiveNewValue">
    </LINK>
    <LINK srcnodeid="406" srcpinname="Output" dstnodeid="428" dstpinname="Set" linkstyle="VHV">
-   <LINKPOINT x="16123" y="11563">
+   <LINKPOINT x="16123" y="11619">
    </LINKPOINT>
-   <LINKPOINT x="18407" y="11567">
+   <LINKPOINT x="18407" y="11591">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="406" srcpinname="Output" dstnodeid="431" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="16080" y="11458">
+   <LINKPOINT x="16080" y="11514">
    </LINKPOINT>
-   <LINKPOINT x="16790" y="11492">
+   <LINKPOINT x="16790" y="11516">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="398" srcpinname="Update Nodes" dstnodeid="426" dstpinname="Y Input Value">
+   <LINK srcnodeid="398" srcpinname="Update Nodes" dstnodeid="426" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="13390" y="12965">
+   </LINKPOINT>
+   <LINKPOINT x="17830" y="12965">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="311" srcpinname="Output" dstnodeid="151" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="433">
-   <BOUNDS type="Box" left="17340" top="19110" width="800" height="240">
+   <BOUNDS type="Box" left="17360" top="19110" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="17340" top="19110" width="0" height="0">
+   <BOUNDS type="Node" left="17360" top="19110" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -849,7 +843,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="436">
-   <BOUNDS type="Node" left="18030" top="17030" width="100" height="100">
+   <BOUNDS type="Node" left="18050" top="17030" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -863,9 +857,9 @@
    <LINK srcnodeid="428" srcpinname="Output" dstnodeid="436" dstpinname="Input">
    </LINK>
    <NODE systemname="Zip (String Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String Bin)" componentmode="Hidden" id="439">
-   <BOUNDS type="Node" left="17340" top="18430" width="100" height="100">
+   <BOUNDS type="Node" left="17360" top="18430" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="17340" top="18430" width="2000" height="2000">
+   <BOUNDS type="Box" left="17360" top="18430" width="2000" height="2000">
    </BOUNDS>
    <PIN pinname="Input 1 Bin Size" slicecount="1" values="-1">
    </PIN>
@@ -885,9 +879,9 @@
    <LINK srcnodeid="436" srcpinname="Output" dstnodeid="439" dstpinname="Input 3">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="444">
-   <BOUNDS type="Node" left="17340" top="17690" width="100" height="100">
+   <BOUNDS type="Node" left="17360" top="17690" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="17340" top="17690" width="2790" height="320">
+   <BOUNDS type="Box" left="17360" top="17690" width="2790" height="320">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="4">
    </PIN>
@@ -905,7 +899,7 @@
    <LINK srcnodeid="439" srcpinname="Output" dstnodeid="433" dstpinname="Input String">
    </LINK>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="449">
-   <BOUNDS type="Node" left="13920" top="9220" width="100" height="100">
+   <BOUNDS type="Node" left="16720" top="9280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -915,5 +909,77 @@
    <LINK srcnodeid="4" srcpinname="Node Label" dstnodeid="449" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="449" srcpinname="OnChange" dstnodeid="406" dstpinname="Input 5">
+   </LINK>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="450">
+   <BOUNDS type="Node" left="20780" top="14760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="12" values="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml,C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Presets\PRESET_04.xml">
+   </PIN>
+   <PIN pinname="Intersperse String" slicecount="1" values="\">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="452">
+   <BOUNDS type="Node" left="20780" top="16260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="11" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="450" srcpinname="Output" dstnodeid="452" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="455">
+   <BOUNDS type="Node" left="20780" top="14330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="398" srcpinname="Current Preset" dstnodeid="455" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="18570" y="14230">
+   </LINKPOINT>
+   <LINKPOINT x="20810" y="14230">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="455" srcpinname="Output" dstnodeid="450" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="457">
+   <BOUNDS type="Node" left="21200" top="15280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="450" srcpinname="Output" dstnodeid="457" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="20840" y="15150">
+   </LINKPOINT>
+   <LINKPOINT x="21200" y="15150">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="458">
+   <BOUNDS type="Node" left="21200" top="15760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="457" srcpinname="Count" dstnodeid="458" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="458" srcpinname="Output" dstnodeid="452" dstpinname="Index" linkstyle="VHV">
+   <LINKPOINT x="21260" y="16135">
+   </LINKPOINT>
+   <LINKPOINT x="21400" y="16135">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="452" srcpinname="Output" dstnodeid="429" dstpinname="Input String">
    </LINK>
    </PATCH>

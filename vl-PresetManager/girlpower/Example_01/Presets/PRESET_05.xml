@@ -1,58 +1,102 @@
-<Preset>
-  <Node>
-    <Name>Background Color</Name>
-    <Type>HSVAField, r=  0% g=  0% b=  0% a=100% , HasAlpha</Type>
-    <Bin>1</Bin>
-    <Value>0.71353,0.97499,0.87473,1.00000</Value>
-    <ID>6</ID>
-  </Node>
-  <Node>
-    <Name>Numer Of Elements</Name>
-    <Type>Endless, 1, 1, 0, 99999999, 1, , 4</Type>
-    <Bin>1</Bin>
-    <Value>27</Value>
-    <ID>29</ID>
-  </Node>
-  <Node>
-    <Name>Rotation</Name>
-    <Type>Endless, 3, 0, -99999999, 99999999, 0.01, , 4</Type>
-    <Bin>3</Bin>
-    <Value>-8;0;-0.53</Value>
-    <ID>34</ID>
-  </Node>
-  <Node>
-    <Name>Max Radius</Name>
-    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
-    <Bin>1</Bin>
-    <Value>0.39</Value>
-    <ID>65</ID>
-  </Node>
-  <Node>
-    <Name>Radius Phase</Name>
-    <Type>Rotary, 1, 0, 0, 1, 0.01, , 4</Type>
-    <Bin>1</Bin>
-    <Value>0.99</Value>
-    <ID>67</ID>
-  </Node>
-  <Node>
-    <Name>Main Radius</Name>
-    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
-    <Bin>1</Bin>
-    <Value>2.96</Value>
-    <ID>68</ID>
-  </Node>
-  <Node>
-    <Name>Radius Factor</Name>
-    <Type>Endless, 1, 1, -99999999, 99999999, 0.01, , 4</Type>
-    <Bin>1</Bin>
-    <Value>5</Value>
-    <ID>76</ID>
-  </Node>
-  <Node>
-    <Name>Color 10</Name>
-    <Type>HSVAField, r=  0% g=100% b=  0% a=100% , HasAlpha</Type>
-    <Bin>10</Bin>
-    <Value>1.00000,0.90000,0.00000,1.00000;0.50000,1.00000,0.00000,1.00000;0.00000,1.00000,0.10000,1.00000;0.00000,1.00000,0.70000,1.00000;0.00000,0.70000,1.00000,1.00000;0.00000,0.10000,1.00000,1.00000;0.50000,0.00000,1.00000,1.00000;1.00000,0.00000,0.90000,1.00000;1.00000,0.00000,0.30000,1.00000;1.00000,0.30000,0.00000,1.00000</Value>
-    <ID>84</ID>
-  </Node>
-</Preset>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE ROOT PUBLIC "" ""[]>
+<Spread>
+  <Item Name="Spread Count" ID="109" Type="Endless:int" Bin_Size="1">
+    <Value>
+      <Item>19</Item>
+    </Value>
+  </Item>
+  <Item Name="Width" ID="110" Type="Endless:float" Bin_Size="1">
+    <Value>
+      <Item>4.08</Item>
+    </Value>
+  </Item>
+  <Item Name="Scale XYZ" ID="114" Type="Endless:float" Bin_Size="3">
+    <Value>
+      <Item>0.02</Item>
+      <Item>0.033</Item>
+      <Item>0.11</Item>
+    </Value>
+  </Item>
+  <Item Name="Factor" ID="115" Type="Endless:float" Bin_Size="1">
+    <Value>
+      <Item>7.15</Item>
+    </Value>
+  </Item>
+  <Item Name="Phase" ID="116" Type="Rotary" Bin_Size="1">
+    <Value>
+      <Item>0.71</Item>
+    </Value>
+  </Item>
+  <Item Name="Diffuse Color" ID="121" Type="HSVAField" Bin_Size="1">
+    <Value>
+      <Item>0.51652,0.00020,0.99815,1.00000</Item>
+    </Value>
+  </Item>
+  <Item Name="Width" ID="122" Type="Endless:float" Bin_Size="1">
+    <Value>
+      <Item>1.13</Item>
+    </Value>
+  </Item>
+  <Item Name="Color 10" Type="HSVAField" Bin_Size="10">
+    <Value>
+      <Item>0.20000,1.00000,0.00020,1.00000</Item>
+      <Item>0.00000,0.99990,0.40010,1.00000</Item>
+      <Item>0.00010,0.99980,1.00000,1.00000</Item>
+      <Item>0.00020,0.39990,1.00000,1.00000</Item>
+      <Item>0.20010,0.00000,0.99990,1.00000</Item>
+      <Item>0.80000,0.00000,0.99980,1.00000</Item>
+      <Item>1.00000,0.00010,0.59990,1.00000</Item>
+      <Item>0.99990,0.00020,0.00000,1.00000</Item>
+      <Item>0.99980,0.60010,0.00000,1.00000</Item>
+      <Item>0.79990,1.00000,0.00010,1.00000</Item>
+    </Value>
+  </Item>
+  <Item Name="Int 10" ID="7" Type="Endless:int" Bin_Size="10">
+    <Value>
+      <Item>2</Item>
+      <Item>3</Item>
+      <Item>-5</Item>
+      <Item>-4</Item>
+      <Item>-3</Item>
+      <Item>-2</Item>
+      <Item>-1</Item>
+      <Item>-1</Item>
+      <Item>0</Item>
+      <Item>1</Item>
+    </Value>
+  </Item>
+  <Item Name="Vec 10" ID="6" Type="Endless:float" Bin_Size="10">
+    <Value>
+      <Item>0.2999</Item>
+      <Item>0.3999</Item>
+      <Item>-0.5</Item>
+      <Item>-0.4</Item>
+      <Item>-0.3</Item>
+      <Item>-0.2</Item>
+      <Item>-0.1</Item>
+      <Item>0</Item>
+      <Item>0.1</Item>
+      <Item>0.2</Item>
+    </Value>
+  </Item>
+  <Item Name="Toggle 10" ID="5" Type="Toggle" Bin_Size="10">
+    <Value>
+      <Item>0.5009</Item>
+      <Item>0.5058</Item>
+      <Item>0.5009</Item>
+      <Item>0.5058</Item>
+      <Item>0.5009</Item>
+      <Item>0.5006</Item>
+      <Item>0.5008</Item>
+      <Item>0.5006</Item>
+      <Item>0.5008</Item>
+      <Item>0.5006</Item>
+    </Value>
+  </Item>
+  <Item Name="String" ID="154" Type="String" Bin_Size="1">
+    <Value>
+      <Item>Preset 5</Item>
+    </Value>
+  </Item>
+</Spread>
