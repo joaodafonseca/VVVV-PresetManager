@@ -227,7 +227,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="310" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="19">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="14">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -345,7 +345,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1420" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.1264,0.0544,0.0502">
+   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.12,0.12,0.12">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -371,7 +371,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2420" top="2970" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="5.9969">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -391,7 +391,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3430" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.709">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -451,7 +451,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="330" top="3590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" visible="1" slicecount="1" values="|0.04780,0.96550,0.60810,1.00000|">
+   <PIN pinname="Color Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Diffuse Color|">
    </PIN>
@@ -467,7 +467,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2420" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1.0345">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -821,7 +821,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3470" top="2970" width="800" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" pintype="Input" visible="1" values="|Preset 2|">
+   <PIN pinname="Input String" slicecount="1" pintype="Input" visible="1" values="|Preset 1|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="String">
    </PIN>

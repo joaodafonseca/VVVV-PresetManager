@@ -82,16 +82,16 @@
   </Item>
   <Item Name="Toggle 10" ID="5" Type="Toggle" Bin_Size="10">
     <Value>
+      <Item>1</Item>
+      <Item>0</Item>
       <Item>0.5004</Item>
-      <Item>0.4997</Item>
+      <Item>0</Item>
       <Item>0.5004</Item>
-      <Item>0.4997</Item>
-      <Item>0.5004</Item>
+      <Item>0</Item>
+      <Item>1</Item>
       <Item>0.4995</Item>
-      <Item>0.5002</Item>
-      <Item>0.4995</Item>
-      <Item>0.5002</Item>
-      <Item>0.4995</Item>
+      <Item>1</Item>
+      <Item>0</Item>
     </Value>
   </Item>
   <Item Name="String" ID="154" Type="String" Bin_Size="1">

@@ -33,7 +33,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="10" values="0,0,0,0,0,-1,-1,-1,-1,-1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="10" values="0,0,-1,-1,-1,-1,-1,-1,0,0">
    </PIN>
    </NODE>
    <NODE id="6" systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" exposed="1">
@@ -65,9 +65,9 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="10" values="1,1,1,1,1,1,1,1,1,1">
+   <PIN pinname="X Input Value" slicecount="10" values="1,0,1,1,1,0,1,1,1,0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="0.5001,0.4993,0.5001,0.4993,0.5001,0.5,0.5007,0.5,0.5007,0.5">
+   <PIN pinname="Y Input Value" slicecount="10" values="1,0.5,1,0.5,1,0.4998,1,0.5,1,0.4998">
    </PIN>
    </NODE>
    </PATCH>
