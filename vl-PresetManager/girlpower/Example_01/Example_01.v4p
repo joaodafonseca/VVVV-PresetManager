@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\vl-PresetManager\girlpower\Example_01\Example_01.v4p" scrollx="40" scrolly="50" systemname="Example" filename="C:\Users\joao_\Desktop\Repositories\VVVV-ProjectManager\VVVV-PresetManager\Example.v4p">
-   <BOUNDS type="Window" left="130" top="0" width="15890" height="13950">
+   <BOUNDS type="Window" left="120" top="0" width="15890" height="13950">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -227,7 +227,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="310" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="14">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="19">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -345,7 +345,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1420" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.1,0.16,0.12">
+   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="0.1264,0.0544,0.0502">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -371,7 +371,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2420" top="2970" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="5.9969">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -391,7 +391,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3430" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.709">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -451,7 +451,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="330" top="3590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Color Input" visible="1" slicecount="1" values="|0.04780,0.96550,0.60810,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Diffuse Color|">
    </PIN>
@@ -467,7 +467,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2420" top="2410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1.0345">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -517,7 +517,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="125">
-   <BOUNDS type="Box" left="8610" top="4310" width="1410" height="2070">
+   <BOUNDS type="Box" left="8610" top="4310" width="1550" height="2060">
    </BOUNDS>
    <BOUNDS type="Node" left="8610" top="4310" width="0" height="0">
    </BOUNDS>
@@ -700,8 +700,8 @@
    <BOUNDS type="Window" left="15940" top="9220" width="6320" height="4740">
    </BOUNDS>
    </NODE>
-   <NODE id="46" componentmode="InAWindow" systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" stayontop="0" debug="0">
-   <BOUNDS type="Window" left="17050" top="0" width="12980" height="17940">
+   <NODE id="46" componentmode="Hidden" systemname="PresetManager" filename="..\..\PresetManager.v4p" nodename="..\..\PresetManager.v4p" stayontop="0" debug="0">
+   <BOUNDS type="Window" left="2370" top="2440" width="12980" height="17940">
    </BOUNDS>
    <BOUNDS type="Node" left="7730" top="7790" width="6100" height="270">
    </BOUNDS>
@@ -821,7 +821,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3470" top="2970" width="800" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" pintype="Input" visible="1" values="|Preset 1|">
+   <PIN pinname="Input String" slicecount="1" pintype="Input" visible="1" values="|Preset 2|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="String">
    </PIN>
