@@ -14,6 +14,7 @@ Preset Manager is an easy and fast way for saving predefined settings in your vv
 
 	- IOBox (value Spread)
 	- IOBox (color Spread)
+	- IOBox (String Spread)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
